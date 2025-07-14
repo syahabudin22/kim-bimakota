@@ -1,0 +1,45 @@
+CRITICAL - 2025-07-10 01:27:44 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: admin/berita/kategori]
+in APPPATH\Views\admin\berita\kategori_berita.php on line 35.
+ 1 APPPATH\Views\admin\berita\kategori_berita.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'E:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\kategori_berita.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\kategori_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/kategori_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(42): view('admin/berita/kategori_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->kategori()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-10 01:28:30 --> ErrorException: Attempt to read property "news_category" on int
+[Method: GET, Route: admin/berita/kategori]
+in APPPATH\Views\admin\berita\kategori_berita.php on line 38.
+ 1 APPPATH\Views\admin\berita\kategori_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_category" on int', 'E:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\kategori_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\kategori_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/kategori_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(42): view('admin/berita/kategori_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->kategori()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-10 01:28:52 --> ErrorException: Attempt to read property "news_category" on array
+[Method: GET, Route: admin/berita/kategori]
+in APPPATH\Views\admin\berita\kategori_berita.php on line 38.
+ 1 APPPATH\Views\admin\berita\kategori_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_category" on array', 'E:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\kategori_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\kategori_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/kategori_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(42): view('admin/berita/kategori_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->kategori()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('E:\\laragon\\www\\kim-bimakota\\public\\index.php')
