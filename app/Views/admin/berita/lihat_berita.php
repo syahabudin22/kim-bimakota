@@ -5,7 +5,7 @@
             <?= $this->section('content'); ?>
             <section class="section">
                 <div class="section-header">
-                    <h1>Table</h1>
+                    <h1><?= $title; ?></h1>
                     <div class="section-header-breadcrumb">
                         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                         <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
@@ -22,43 +22,64 @@
                                         <a href="<?= site_url('admin/berita/tambah_berita') ?>" class="btn btn-primary">Tambah</a>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <table id="mytable" class="table">
-                                        <thead>
+                                <?php if (session()->getFlashdata('success')) : ?>
+                                    <div class="alert alert-success alert-dismissible show fade">
+                                        <div class="alert-body">
+                                            <button class="close" data-dismiss="alert">
+                                                <span>&times;</span>
+                                            </button>
+                                            Success !
+                                        </div>
+                                        <?= session()->getFlashdata('success'); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (session()->getFlashdata('errors')) : ?>
+                                    <div class="alert alert-danger alert-dismissible show fade">
+                                        <div class="alert-body">
+                                            <button class="close" data-dismiss="alert">
+                                                <span>&times;</span>
+                                            </button>
+                                            Error !
+                                        </div>
+                                        <?= session()->getFlashdata('success'); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <table id="mytable" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Penulis</th>
+                                            <th scope="col">Judul</th>
+                                            <th scope="col">Kategori</th>
+                                            <th scope="col">Tanggal</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($berita as $key => $value) : ?>
                                             <tr>
-                                                <th scope="col">No</th>
-                                                <th scope="col">Penulis</th>
-                                                <th scope="col">Judul</th>
-                                                <th scope="col">Kategori</th>
-                                                <th scope="col">Tanggal</th>
-                                                <th scope="col">Status</th>
-                                                <th scope="col">Aksi</th>
+                                                <th scope="row"><?= $key + 1 ?></th>
+                                                <td><?= $value->full_name ?></td>
+                                                <td><?= $value->news_title ?></td>
+                                                <td><?= $value->news_category ?></td>
+                                                <td><?= $value->news_date ?></td>
+                                                <td><?= $value->news_status ?></td>
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <a href="#" class="btn btn-icon icon-left btn-info"><i class="fas fa-eye"></i></a>
+                                                        <a href="#" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-icon icon-left btn-danger"><i class="fas fa-times"></i></a>
+                                                    </div>
+                                                </td>
                                             </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php foreach ($berita as $key => $value) : ?>
-                                                <tr>
-                                                    <th scope="row"><?= $key + 1 ?></th>
-                                                    <td><?= $value->full_name ?></td>
-                                                    <td><?= $value->news_title ?></td>
-                                                    <td><?= $value->news_category ?></td>
-                                                    <td><?= $value->news_date ?></td>
-                                                    <td><?= $value->news_status ?></td>
-                                                    <td class="text-center">
-                                                        <div class="btn-group">
-                                                            <a href="#" class="btn btn-icon icon-left btn-info"><i class="fas fa-eye"></i></a>
-                                                            <a href="#" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i></a>
-                                                            <a href="#" class="btn btn-icon icon-left btn-danger"><i class="fas fa-times"></i></a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            <?php endforeach; ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
             <?= $this->endSection(); ?>

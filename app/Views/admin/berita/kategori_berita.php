@@ -1,6 +1,6 @@
  <?= $this->extend('admin/layout/template'); ?>
  <?= $this->section('content'); ?>
- <title>Berita</title>
+ <title><?= $title; ?></title>
  <?= $this->endSection(); ?>
  <?= $this->section('content'); ?>
  <section class="section">

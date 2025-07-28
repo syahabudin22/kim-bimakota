@@ -5,7 +5,10 @@
  <?= $this->section('content'); ?>
  <section class="section">
      <div class="section-header">
-         <h1>Table</h1>
+         <div class="section-header-back">
+             <a href="<?= site_url('admin/berita') ?>" class="btn"><i class="fas fa-arrow-left"></i></a>
+         </div>
+         <h1><?= $title; ?></h1>
          <div class="section-header-breadcrumb">
              <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
              <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
@@ -20,41 +23,58 @@
                          <h4>Tambah Berita</h4>
                      </div>
                      <div class="card-body">
-                         <form action="" method="get" autocomplete="off">
+                         <?php $errors = validation_errors(); ?>
+                         <form action="<?= site_url('admin/berita/simpan_berita') ?>" method="post" enctype="multipart/form-data" autocomplete="off">
+                             <?= csrf_field() ?>
                              <div class="form-group row mb-4">
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Judul</label>
                                  <div class="col-sm-12 col-md-7">
-                                     <input type="text" class="form-control">
+                                     <input type="text" name="news_title" class="form-control <?= isset($errors['news_title']) ? 'is-invalid' : null ?>" value="<?= old('news_title'); ?>">
+                                     <div class="invalid-feedback">
+                                         <?= isset($errors['news_title']) ? $errors['news_title'] : null ?>
+                                     </div>
                                  </div>
                              </div>
                              <div class="form-group row mb-4">
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Isi Berita</label>
                                  <div class="col-sm-12 col-md-7">
-                                     <textarea class="summernote"></textarea>
+                                     <textarea name="news_text" class="summernote <?= isset($errors['news_text']) ? 'is-invalid' : null ?>"><?= old('news_text'); ?></textarea>
+                                 </div>
+                                 <div class="invalid-feedback">
+                                     <?= isset($errors['news_text']) ? $errors['news_text'] : null ?>
                                  </div>
                              </div>
                              <div class="form-group row mb-4">
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Kategori</label>
                                  <div class="col-sm-12 col-md-7">
-                                     <select class="form-control selectric">
-                                         <option>Layanan Informasi Anak</option>
-                                         <option>Politik</option>
-                                         <option>Kuliner</option>
+                                     <select name="news_categoryid" class="form-control <?= isset($errors['news_categoryid']) ? 'is-invalid' : null ?>">
+                                         <option value="<?= old('news_categoryid'); ?>" hidden>Pilih Kategori</option>
+                                         <?php foreach ($kategori as $key) : ?>
+                                             <option value="<?= $key['news_categoryid'] ?>" <?= old('news_categoryid') == $key['news_categoryid'] ? 'selected' : null ?>>
+                                                 <?= $key['news_category'] ?>
+                                             </option>
+                                         <?php endforeach; ?>
                                      </select>
+                                     <div class="invalid-feedback">
+                                         <?= isset($errors['news_categoryid']) ? $errors['news_categoryid'] : null ?>
+                                     </div>
                                  </div>
                              </div>
                              <div class="form-group row mb-4">
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                  <div class="col-sm-12 col-md-7">
                                      <label for="formFile" class="form-label">Upload Gambar</label>
-                                     <input class="form-control" type="file" id="formFile">
-                                     <div class="form-text">Gambar ini akan di tampilkan di berita halaman depan web (Ukuran File Maks 5MB)</div>
+                                     <input class="form-control <?= isset($errors['news_image']) ? 'is-invalid' : null ?>" type="file" id="formFile" name="news_image">
+                                     <div class="form-text">Gambar ini akan di tampilkan di berita halaman depan web (Ukuran File Maks 4MB)</div>
+                                     <div class="invalid-feedback">
+                                         <?= isset($errors['news_image']) ? $errors['news_image'] : null ?>
+                                     </div>
                                  </div>
                              </div>
                              <div class="form-group row mb-4">
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                  <div class="col-sm-12 col-md-7">
-                                     <button class="btn btn-primary">Publish</button>
+                                     <button type="submit" class="btn btn-primary">Simpan</button>
                                  </div>
                              </div>
                          </form>

@@ -9,3 +9,4 @@ $routes->get('/', 'Home::index');
 $routes->get('/admin/berita', 'Berita::index');
 $routes->get('/admin/berita/kategori', 'Berita::kategori');
 $routes->get('/admin/berita/tambah_berita', 'Berita::tambah_berita');
+$routes->post('/admin/berita/simpan_berita', 'Berita::simpan_berita');
