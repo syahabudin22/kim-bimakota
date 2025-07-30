@@ -53,6 +53,18 @@ class Berita extends BaseController
         return view('admin/berita/tambah_berita', $data);
     }
 
+    public function detail_berita($id = null)
+    {
+        $berita = $this->BeritaModel->find($id);
+
+        $data = [
+            'title' => 'Detail Berita',
+            'berita' => $berita
+        ];
+
+        return view('admin/berita/detail_berita', $data);
+    }
+
     public function simpan_berita()
     {
         $validate = $this->validate([

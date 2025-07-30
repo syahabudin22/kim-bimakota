@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/summernote/dist/summernote-bs4.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/codemirror/lib/codemirror.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/codemirror/theme/duotone-dark.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/selectric/public/selectric.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/ionicons201/css/ionicons.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/summernote/dist/summernote-bs4.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/codemirror/theme/duotone-dark.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/selectric/public/selectric.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/ionicons201/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/assets/css/components.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
                 </form>
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <img alt="image" src="<?= base_url() ?>/template/back-end/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
                             <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -104,24 +104,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
-    <script src="<?= base_url() ?>/template/node_modules/summernote/dist/summernote-bs4.js"></script>
-    <script src="<?= base_url() ?>/template/node_modules/codemirror/lib/codemirror.js"></script>
-    <script src="<?= base_url() ?>/template/node_modules/codemirror/mode/javascript/javascript.js"></script>
-    <script src="<?= base_url() ?>/template/node_modules/selectric/public/jquery.selectric.min.js"></script>
-    <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="<?= base_url() ?>/template/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/summernote/dist/summernote-bs4.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/selectric/public/jquery.selectric.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
 
     <!-- Template JS File -->
-    <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
-    <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/assets/js/scripts.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/assets/js/custom.js"></script>
 
     <!-- Page Specific JS File -->
-    <script src="<?= base_url() ?>/template/assets/js/page/modules-ion-icons.js"></script>
-    <script src="<?= base_url() ?>/template/assets/js/page/modules-datatables.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-ion-icons.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-datatables.js"></script>
 </body>
 
 </html>

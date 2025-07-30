@@ -1,6 +1,6 @@
             <?= $this->extend('admin/layout/template'); ?>
             <?= $this->section('content'); ?>
-            <title>Berita</title>
+            <title>$title</title>
             <?= $this->endSection(); ?>
             <?= $this->section('content'); ?>
             <section class="section">
@@ -64,12 +64,20 @@
                                                 <td><?= $value->news_title ?></td>
                                                 <td><?= $value->news_category ?></td>
                                                 <td><?= $value->news_date ?></td>
-                                                <td><?= $value->news_status ?></td>
+                                                <?php if ($value->news_status == 'T') :  ?>
+                                                    <td class="text-center">
+                                                        <div class="badge badge-success">Active</div>
+                                                    </td>
+                                                <?php else :  ?>
+                                                    <td class="text-center">
+                                                        <div class="badge badge-danger">Not Active</div>
+                                                    </td>
+                                                <?php endif; ?>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="#" class="btn btn-icon icon-left btn-info"><i class="fas fa-eye"></i></a>
-                                                        <a href="#" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i></a>
-                                                        <a href="#" class="btn btn-icon icon-left btn-danger"><i class="fas fa-times"></i></a>
+                                                        <a href="<?= site_url('admin/berita/detail_berita/' . $value->newsid) ?>" class="btn btn-icon btn-info"><i class="fas fa-eye"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>
