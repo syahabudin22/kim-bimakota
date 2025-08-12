@@ -117,6 +117,7 @@
     <script src="<?= base_url() ?>/template/back-end/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
     <script src="<?= base_url() ?>/template/back-end/node_modules/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js"></script>
     <script src="<?= base_url() ?>/template/back-end/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/template/back-end/assets/js/scripts.js"></script>
@@ -126,6 +127,27 @@
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/features-post-create.js"></script>
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-ion-icons.js"></script>
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-datatables.js"></script>
+    <script>
+        $("#hapus").click(function() {
+            swal({
+                    title: 'Are you sure?',
+                    text: 'Once deleted, you will not be able to recover this imaginary file!',
+                    icon: 'warning',
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal('Poof! Your imaginary file has been deleted!', {
+                            icon: 'success',
+                        });
+                    } else {
+                        swal('Your imaginary file is safe!');
+                    }
+                });
+        });
+    </script>
+
 </body>
 
 </html>
