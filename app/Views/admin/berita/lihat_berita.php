@@ -1,6 +1,6 @@
             <?= $this->extend('admin/layout/template'); ?>
             <?= $this->section('content'); ?>
-            <title>$title</title>
+            <title><?= $title; ?></title>
             <?= $this->endSection(); ?>
             <?= $this->section('content'); ?>
             <section class="section">
@@ -76,7 +76,7 @@
                                                 <td class="text-center">
                                                     <div class="btn-group">
                                                         <a href="<?= site_url('admin/berita/detail_berita/' . $value->newsid) ?>" class="btn btn-icon btn-info"><i class="fas fa-eye"></i></a>
-                                                        <a href="#" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
+                                                        <a href="<?= site_url('admin/berita/edit_berita/' . $value->newsid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
                                                         <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a>
                                                     </div>
                                                 </td>

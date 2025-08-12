@@ -1,0 +1,647 @@
+DEBUG - 2025-08-11 00:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 01:10:44 --> ErrorException: Undefined array key "gambar"
+[Method: GET, Route: admin/berita/detail_berita/578]
+in APPPATH\Views\admin\berita\detail_berita.php on line 35.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('578')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 01:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-11 01:38:07 --> CSRF token verified.
+CRITICAL - 2025-08-11 01:38:08 --> CodeIgniter\Files\Exceptions\FileNotFoundException: File not found: "D:\laragon\www\kim-bimakota\writable\../assets/upload/image/1754835989_6f681cd31517be047556.jpg"
+[Method: POST, Route: admin/berita/simpan_berita]
+in SYSTEMPATH\Files\File.php on line 51.
+ 1 SYSTEMPATH\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('D:\\laragon\\www\\kim-bimakota\\writable\\../assets/upload/image/1754835989_6f681cd31517be047556.jpg')
+ 2 SYSTEMPATH\Images\Handlers\BaseHandler.php(152): CodeIgniter\Files\File->__construct('D:\\laragon\\www\\kim-bimakota\\writable\\../assets/upload/image/1754835989_6f681cd31517be047556.jpg', true)
+ 3 APPPATH\Controllers\Berita.php(115): CodeIgniter\Images\Handlers\BaseHandler->withFile('D:\\laragon\\www\\kim-bimakota\\writable\\../assets/upload/image/1754835989_6f681cd31517be047556.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->simpan_berita()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+INFO - 2025-08-11 01:38:50 --> CSRF token verified.
+DEBUG - 2025-08-11 01:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 01:46:27 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: admin/berita/edit_berita/577]
+in APPPATH\Views\admin\berita\edit_berita.php on line 52.
+ 1 APPPATH\Views\admin\berita\edit_berita.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(77): view('admin/berita/edit_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('577')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 01:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 01:52:27 --> Error: Undefined constant "Berita"
+[Method: GET, Route: admin/berita/edit_berita/577]
+in APPPATH\Views\admin\berita\edit_berita.php on line 45.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+ 4 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('577')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 01:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 01:53:04 --> ErrorException: Undefined array key "news_category"
+[Method: GET, Route: admin/berita/edit_berita/577]
+in APPPATH\Views\admin\berita\edit_berita.php on line 55.
+ 1 APPPATH\Views\admin\berita\edit_berita.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "news_category"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('577')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 01:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 01:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-11 03:45:54 --> CSRF token verified.
+DEBUG - 2025-08-11 03:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 03:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-11 04:04:20 --> CSRF token verified.
+DEBUG - 2025-08-11 04:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 04:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 04:55:21 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(31): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 04:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 04:55:23 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(31): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 05:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 05:33:28 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(31): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:15:22 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(31): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:17:52 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:21:03 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:21:05 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:21:22 --> ErrorException: Undefined array key 6
+[Method: GET, Route: admin/berita/edit_berita/577]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '6')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '6', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '6')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('577')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:21:57 --> ErrorException: Undefined array key 6
+[Method: GET, Route: admin/berita/edit_berita/577]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '6')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '6', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '6')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('577')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:21:59 --> ErrorException: Undefined array key 6
+[Method: GET, Route: admin/berita/edit_berita/577]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '6')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '6', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '6')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('577')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:22:03 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:23:18 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/edit_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/edit_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/edit_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:26:24 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/edit_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/edit_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/edit_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:26:26 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/edit_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/edit_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/edit_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:29:17 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/edit_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/edit_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/edit_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:29:23 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/edit_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/edit_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/edit_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:30:37 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:30:38 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:31:18 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:33:04 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/580]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('580')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:33:28 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/berita/edit_berita/579]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '1')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '1', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '1')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('579')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-11 07:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:38:33 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-08-11 07:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-11 07:40:35 --> ErrorException: Undefined array key 7
+[Method: GET, Route: admin/berita/edit_berita/2]
+in SYSTEMPATH\HTTP\URI.php on line 379.
+ 1 SYSTEMPATH\HTTP\URI.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'D:\\laragon\\www\\kim-bimakota\\system\\HTTP\\URI.php', 379)
+ 2 SYSTEMPATH\HTTP\URI.php(646): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(113): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\SiteURI.php(441): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/berita/update_berita', 'localhost', '7')
+ 5 SYSTEMPATH\Helpers\url_helper.php(39): CodeIgniter\HTTP\SiteURI->siteUrl('admin/berita/update_berita', '7', Object(Config\App))
+ 6 APPPATH\Views\admin\berita\edit_berita.php(27): site_url('admin/berita/update_berita', '7')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\edit_berita.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/edit_berita', [], true)
+10 APPPATH\Controllers\Berita.php(79): view('admin/berita/edit_berita', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->edit_berita('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
