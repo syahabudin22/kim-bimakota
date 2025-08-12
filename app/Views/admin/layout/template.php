@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/ionicons201/css/ionicons.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/back-end/assets/css/style.css">
@@ -114,12 +115,15 @@
     <script src="<?= base_url() ?>/template/back-end/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="<?= base_url() ?>/template/back-end/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
     <script src="<?= base_url() ?>/template/back-end/node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js"></script>
+    <script src="<?= base_url() ?>/template/back-end/node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/template/back-end/assets/js/scripts.js"></script>
     <script src="<?= base_url() ?>/template/back-end/assets/js/custom.js"></script>
 
     <!-- Page Specific JS File -->
+    <script src="<?= base_url() ?>/template/back-end/assets/js/page/features-post-create.js"></script>
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-ion-icons.js"></script>
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-datatables.js"></script>
 </body>

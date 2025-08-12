@@ -25,23 +25,21 @@
                      <div class="card-body">
                          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                              <article class="article article-style-b">
+                                 <div class="article-title">
+                                     <div class="article-image">
+                                         <?php if ($berita['news_image'] != '') : ?>
+                                             <img src="<?= base_url('upload/image/' . $berita['news_image']) ?>" class="img-fluid" alt="...">
+                                         <?php endif; ?>
+                                     </div>
+                                 </div>
                                  <div class="article-details">
                                      <div class="article-title">
-                                         <!-- <div class="chocolat-parent">
-                                             <?php if ($berita['news_image'] != '') : ?>
-                                                 <a href="<?= base_url('upload/image/' . $berita['news_image']) ?>" title="Detail Berita">
-                                                     <div>
-                                                         <img alt="image" src="<?= base_url('upload/image/' . $berita['news_image']) ?>" class="img-fluid">
-                                                     </div>
-                                                 </a>
-                                             <?php endif; ?>
-                                         </div> -->
-                                         <img src="<?= base_url('upload/image/' . $berita['news_image']) ?>" class="img img-thumbnail">
-                                         <h1><a href="#"><?= $berita['news_title']; ?></a></h1>
                                      </div>
+                                     <h2><a href="#"><?= $berita['news_title']; ?></a></h2>
+                                     <h5><a href="#"><?= $berita['news_date']; ?></a></h5>
                                      <p><?= $berita['news_text'] ?> </p>
                                      <div class="article-cta">
-                                         <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                                         <!-- <a href="#">Read More <i class="fas fa-chevron-right"></i></a> -->
                                      </div>
                                  </div>
                              </article>

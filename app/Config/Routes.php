@@ -11,3 +11,8 @@ $routes->get('/admin/berita/kategori', 'Berita::kategori');
 $routes->get('/admin/berita/tambah_berita', 'Berita::tambah_berita');
 $routes->post('/admin/berita/simpan_berita', 'Berita::simpan_berita');
 $routes->get('/admin/berita/detail_berita/(:any)', 'Berita::detail_berita/$1');
+<<<<<<< HEAD
+=======
+$routes->get('/admin/berita/edit_berita/(:num)', 'Berita::edit_berita/$1');
+$routes->post('/admin/berita/update_berita/(:num)', 'Berita::update_berita/$1');
+>>>>>>> 1ea7aeb23bc3a04e2120a7578ae8907260935b75

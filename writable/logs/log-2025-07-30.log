@@ -484,3 +484,7 @@ in APPPATH\Views\admin\berita\detail_berita.php on line 27.
 12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
 DEBUG - 2025-07-30 04:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-07-30 04:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
+=======
+DEBUG - 2025-07-30 07:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 1ea7aeb23bc3a04e2120a7578ae8907260935b75
