@@ -1,0 +1,486 @@
+DEBUG - 2025-07-30 01:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 01:38:37 --> CSRF token verified.
+DEBUG - 2025-07-30 01:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 01:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 02:21:22 --> CSRF token verified.
+DEBUG - 2025-07-30 02:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 02:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 03:31:24 --> CSRF token verified.
+DEBUG - 2025-07-30 03:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 03:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 04:02:44 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:03:24 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:07:01 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:09:02 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:13:21 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:13:46 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:14:08 --> ErrorException: Attempt to read property "news_image" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:15:01 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:15:33 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 4 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:15:36 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 4 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:15:47 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 4 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:15:48 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 4 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:19:11 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:19:27 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:19:29 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:19:30 --> ErrorException: Attempt to read property "news_text" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:19:42 --> ErrorException: Attempt to read property "news_image" on string
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on string', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:22:46 --> ErrorException: Attempt to read property "news_image" on array
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:22:48 --> ErrorException: Attempt to read property "news_image" on array
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:22:49 --> ErrorException: Attempt to read property "news_image" on array
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:22:50 --> ErrorException: Attempt to read property "news_image" on array
+[Method: GET, Route: admin/berita/detail_berita/2]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-07-30 04:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 04:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 04:22:56 --> ErrorException: Attempt to read property "news_image" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 32.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_image" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:25:00 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 26.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:25:03 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 26.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:25:03 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 26.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:25:04 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 26.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:25:13 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 26.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:25:17 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 26.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:47:09 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<div dir="auto" style="text-align: justify;"><strong>KIM Tembe Nggoli<"
+[Method: GET, Route: assets/upload/image/%3Cdiv%20dir=%22auto%22%20style=%22text-align:%20justify;%22%3E%3Cstrong%3EKIM%20Tembe%20Nggoli%3C/strong%3E.%20Kamis%20%2828/01%29%20Dalam%20memberikan%20pemahaman%20dan%20pengetahuan%20kepada%20masyarakat%20khususnya%20jamaah%20Masjid%20Besar%20An%20Nur%20Rabadompu%20Barat%20pengurus%20masjid%20rutin%20melakukan%20kajian%20agama.%C2%A0Kegiatan%20tersebut%20diikuti%20puluhan%20jamaah%20Masjid%20yang%20dilakukan%20setiap%20malam%20selasa%20dan%20sabtu.%3C/div%3E__%3Cdiv%20dir=%22auto%22%20style=%22text-align:%20justify;%22%3EPengajian%20rutin%20tersebut%20dipimpin%20langsung%20oleh%20Ustad%20Iskandar%20S.Ag.%20Dalam%20kesempatannya%20beliau%20mengajak%20masyarakat%20Rabadompu%20Barat%20dan%20sekitarnya%20untuk%20mengikuti%20kajian%20rutin%20tersebut.%3C/div%3E__%3Cdiv%20dir=%22auto%22%20style=%22text-align:%20justify;%22%3EIa%20berharap%20dengan%20adanya%20kajian%20tersebut%20diharapkan%20masyarakat%20dan%20jamaah%20Masjid%20mendapatkan%20pemahaman%20dan%20pengetahuan%20tentang%20fiqih%20islam%20selama%20ini.%3C/div%3E__%3Cdiv%20dir=%22auto%22%20style=%22text-align:%20justify;%22%3E%22mari%20kita%20sama-sama%20belajar%20dan%20mengikuti%20kajian%20rutin%20untuk%20menambah%20ilmu%20dan%20sekaligus%20ajang%20silaturrahim%22%20imbuhnya.%C2%A0%3C/div%3E__%3Cdiv%20dir=%22auto%22%20style=%22text-align:%20justify;%22%3ESelain%20kajian%20ilmu%20Masjid%20Besar%20An%20Nur%20Rabadompu%20Barat%20rutin%20mengadakan%20yasinan%20bersama%20setiap%20malam%20jum%27at.%20%3Cstrong%3E%3Cem%3EAlamsyah%3C/em%3E%3C/strong%3E%3C/div%3E]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('assets/upload/image/<div dir="auto" style="text-align: justify;"><strong>KIM Tembe Nggoli</strong>. Kamis (28/01) Dalam memberikan pemahaman dan pengetahuan kepada masyarakat khususnya jamaah Masjid Besar An Nur Rabadompu Barat pengurus masjid rutin melakukan kajian agama. Kegiatan tersebut diikuti puluhan jamaah Masjid yang dilakukan setiap malam selasa dan sabtu.</div>__<div dir="auto" style="text-align: justify;">Pengajian rutin tersebut dipimpin langsung oleh Ustad Iskandar S.Ag. Dalam kesempatannya beliau mengajak masyarakat Rabadompu Barat dan sekitarnya untuk mengikuti kajian rutin tersebut.</div>__<div dir="auto" style="text-align: justify;">Ia berharap dengan adanya kajian tersebut diharapkan masyarakat dan jamaah Masjid mendapatkan pemahaman dan pengetahuan tentang fiqih islam selama ini.</div>__<div dir="auto" style="text-align: justify;">"mari kita sama-sama belajar dan mengikuti kajian rutin untuk menambah ilmu dan sekaligus ajang silaturrahim" imbuhnya. </div>__<div dir="auto" style="text-align: justify;">Selain kajian ilmu Masjid Besar An Nur Rabadompu Barat rutin mengadakan yasinan bersama setiap malam jum\'at. <strong><em>Alamsyah</em></strong></div>')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('assets/upload/image/<div dir="auto" style="text-align: justify;"><strong>KIM Tembe Nggoli</strong>. Kamis (28/01) Dalam memberikan pemahaman dan pengetahuan kepada masyarakat khususnya jamaah Masjid Besar An Nur Rabadompu Barat pengurus masjid rutin melakukan kajian agama. Kegiatan tersebut diikuti puluhan jamaah Masjid yang dilakukan setiap malam selasa dan sabtu.</div>__<div dir="auto" style="text-align: justify;">Pengajian rutin tersebut dipimpin langsung oleh Ustad Iskandar S.Ag. Dalam kesempatannya beliau mengajak masyarakat Rabadompu Barat dan sekitarnya untuk mengikuti kajian rutin tersebut.</div>__<div dir="auto" style="text-align: justify;">Ia berharap dengan adanya kajian tersebut diharapkan masyarakat dan jamaah Masjid mendapatkan pemahaman dan pengetahuan tentang fiqih islam selama ini.</div>__<div dir="auto" style="text-align: justify;">"mari kita sama-sama belajar dan mengikuti kajian rutin untuk menambah ilmu dan sekaligus ajang silaturrahim" imbuhnya. </div>__<div dir="auto" style="text-align: justify;">Selain kajian ilmu Masjid Besar An Nur Rabadompu Barat rutin mengadakan yasinan bersama setiap malam jum\'at. <strong><em>Alamsyah</em></strong></div>')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-07-30 04:50:14 --> ErrorException: Attempt to read property "news_text" on array
+[Method: GET, Route: admin/berita/detail_berita/4]
+in APPPATH\Views\admin\berita\detail_berita.php on line 27.
+ 1 APPPATH\Views\admin\berita\detail_berita.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "news_text" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\berita\\detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/berita/detail_berita', [], true)
+ 5 APPPATH\Controllers\Berita.php(65): view('admin/berita/detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Berita->detail_berita('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-07-30 04:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 04:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
