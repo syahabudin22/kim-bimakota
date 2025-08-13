@@ -128,24 +128,26 @@
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-ion-icons.js"></script>
     <script src="<?= base_url() ?>/template/back-end/assets/js/page/modules-datatables.js"></script>
     <script>
-        $("#hapus").click(function() {
+        // Sweet alert
+        function confirmation(ev) {
+            ev.preventDefault();
+            var urlToRedirect = ev.currentTarget.getAttribute('href'); //use currentTarget because the click may be on the nested i tag and not a tag causing the href to be empty
+            console.log(urlToRedirect); // verify if this is the right URL
             swal({
-                    title: 'Are you sure?',
-                    text: 'Once deleted, you will not be able to recover this imaginary file!',
-                    icon: 'warning',
+                    title: "Yakin ingin menghapus data ini?",
+                    text: "Data yang sudah dihapus tidak dapat dikembalikan",
+                    icon: "warning",
                     buttons: true,
                     dangerMode: true,
                 })
                 .then((willDelete) => {
+                    // redirect with javascript here as per your logic after showing the alert using the urlToRedirect value
                     if (willDelete) {
-                        swal('Poof! Your imaginary file has been deleted!', {
-                            icon: 'success',
-                        });
-                    } else {
-                        swal('Your imaginary file is safe!');
+                        // Proses ke URL
+                        window.location.href = urlToRedirect;
                     }
                 });
-        });
+        }
     </script>
 
 </body>

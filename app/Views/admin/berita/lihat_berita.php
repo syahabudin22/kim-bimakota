@@ -41,7 +41,7 @@
                                             </button>
                                             Error !
                                         </div>
-                                        <?= session()->getFlashdata('success'); ?>
+                                        <?= session()->getFlashdata('errors'); ?>
                                     </div>
                                 <?php endif; ?>
                                 <table id="mytable" class="table">
@@ -77,7 +77,7 @@
                                                     <div class="btn-group">
                                                         <a href="<?= site_url('admin/berita/detail_berita/' . $value->newsid) ?>" class="btn btn-icon btn-info"><i class="fas fa-eye"></i></a>
                                                         <a href="<?= site_url('admin/berita/edit_berita/' . $value->newsid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
-                                                        <a href="<?= site_url('admin/berita/hapus_berita/' . $value->newsid) ?>" class="btn btn-icon btn-danger" id="hapus"><i class="fas fa-times"></i></a>
+                                                        <a href="<?= site_url('admin/berita/hapus_berita/' . $value->newsid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>

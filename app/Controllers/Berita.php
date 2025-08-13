@@ -42,6 +42,32 @@ class Berita extends BaseController
         return view('admin/berita/kategori_berita', $data);
     }
 
+    public function simpan_kategori()
+    {
+        $data = $this->request->getPost();
+        $save = $this->KategoriModel->insert($data);
+        if (!$save) {
+            return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
+        } else {
+            return redirect()->back()->withInput()->with('success', 'Data Berhasil Disimpan');
+        }
+    }
+
+    public function update_kategori($news_categoryid = null)
+    {
+        $kategori = $this->KategoriModel->find($news_categoryid);
+        $data = [
+            'kategori' => $kategori,
+            'news_category' => $this->request->getVar('news_category')
+        ];
+        $save = $this->KategoriModel->update($data);
+        if (!$save) {
+            return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
+        } else {
+            return redirect()->back()->withInput()->with('success', 'Data Berhasil Disimpan');
+        }
+    }
+
     public function tambah_berita()
     {
         $kategori = $this->KategoriModel->findAll();
@@ -194,6 +220,14 @@ class Berita extends BaseController
             return redirect()->back()->withInput();
         } else {
             if (! empty($_FILES['news_image']['name'])) {
+                // cek apakah file gambar ada
+                $berita = $this->BeritaModel->find($newsid);
+                $gambarlama = 'upload/image/' . $berita['news_image'];
+                $thumbs = 'upload/image/thumbs/' . $berita['news_image'];
+                if ($gambarlama && $thumbs != '') {
+                    unlink($gambarlama);
+                    unlink($thumbs);
+                }
                 // Image upload
                 $avatar   = $this->request->getFile('news_image');
                 $namabaru = str_replace(' ', '-', $avatar->getName());
@@ -242,10 +276,11 @@ class Berita extends BaseController
     public function hapus_berita($newsid = null)
     {
         $berita = $this->BeritaModel->find($newsid);
-        $gambar   = $this->request->getFile('news_image');
-        if ($gambar != '') {
-            $gambar_lama = 'upload/image/' . $berita['news_image'];
-            unlink($gambar_lama);
+        $gambarlama = 'upload/image/' . $berita['news_image'];
+        $thumbs = 'upload/image/thumbs/' . $berita['news_image'];
+        if ($gambarlama && $thumbs != '') {
+            unlink($gambarlama);
+            unlink($thumbs);
         }
         $this->BeritaModel->delete($newsid);
         return redirect()->to(site_url('admin/berita'))->with('success', 'Data Berhasil Dihapus');
