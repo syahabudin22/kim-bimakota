@@ -53,9 +53,9 @@ class Berita extends BaseController
         return view('admin/berita/tambah_berita', $data);
     }
 
-    public function detail_berita($id = null)
+    public function detail_berita($newsid = null)
     {
-        $berita = $this->BeritaModel->find($id);
+        $berita = $this->BeritaModel->find($newsid);
 
         $data = [
             'title' => 'Detail Berita',
@@ -65,9 +65,9 @@ class Berita extends BaseController
         return view('admin/berita/detail_berita', $data);
     }
 
-    public function edit_berita($id = null)
+    public function edit_berita($newsid = null)
     {
-        $berita = $this->BeritaModel->find($id);
+        $berita = $this->BeritaModel->find($newsid);
         $kategori = $this->KategoriModel->findAll();
 
         $data = [
@@ -155,7 +155,7 @@ class Berita extends BaseController
         }
     }
 
-    public function update_berita($id = null)
+    public function update_berita($newsid = null)
     {
         $validate = $this->validate([
             'news_title' => [
@@ -178,13 +178,11 @@ class Berita extends BaseController
             ],
             'news_image' => [
                 'rules' => [
-                    'uploaded[news_image]',
                     'is_image[news_image]',
                     'mime_in[news_image,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
                     'max_size[news_image,4068]',
                 ],
                 'errors' => [
-                    'uploaded' => 'Gambar tidak boleh kosong',
                     'is_image' => 'Harus file berbentuk gambar',
                     'mime_in' => 'Gambar harus berformat jpg/jpeg/gif/png/webp',
                     'max_size' => 'Gambar maksimal 4 Mb',
@@ -206,7 +204,6 @@ class Berita extends BaseController
                     ->fit(100, 100, 'center')
                     ->save('upload/image/thumbs/' . $namabaru);
                 // masuk database
-                // $data = $this->request->getPost();
                 // $enkrip = base64_encode($this->request->getVar('news_title'));
                 $data = [
                     'news_categoryid' => $this->request->getVar('news_categoryid'),
@@ -217,7 +214,7 @@ class Berita extends BaseController
                     'news_date_modified' => date('Y-m-d H:i:s')
                 ];
                 // dd($data);
-                $save = $this->BeritaModel->update($id, $data);
+                $save = $this->BeritaModel->update($newsid, $data);
                 if (!$save) {
                     return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
                 } else {
@@ -233,12 +230,24 @@ class Berita extends BaseController
                 'news_date_modified' => date('Y-m-d H:i:s')
             ];
             // dd($data);
-            $save = $this->BeritaModel->update($id, $data);
+            $save = $this->BeritaModel->update($newsid, $data);
             if (!$save) {
                 return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
             } else {
                 return redirect()->to(site_url('admin/berita'))->with('success', 'Data Berhasil Disimpan');
             }
         }
+    }
+
+    public function hapus_berita($newsid = null)
+    {
+        $berita = $this->BeritaModel->find($newsid);
+        $gambar   = $this->request->getFile('news_image');
+        if ($gambar != '') {
+            $gambar_lama = 'upload/image/' . $berita['news_image'];
+            unlink($gambar_lama);
+        }
+        $this->BeritaModel->delete($newsid);
+        return redirect()->to(site_url('admin/berita'))->with('success', 'Data Berhasil Dihapus');
     }
 }
