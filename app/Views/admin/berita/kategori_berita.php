@@ -60,10 +60,10 @@
                                          <td><?= $value['news_category'] ?></td>
                                          <div class="btn-group">
                                              <td>
-                                                 <!-- <a href="<?= site_url('admin/berita/detail_berita/' . $value['news_categoryid']) ?>" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i></a>
-                                                 <a href="<?= site_url('admin/berita/detail_berita/' . $value['news_categoryid']) ?>" class="btn btn-icon icon-left btn-danger"><i class="fas fa-times"></i></a> -->
-                                                 <button type="button" class="btn btn-icon icon-left btn-primary" data-toggle="modal" data-target="#ModalEdit"><i class="far fa-edit"></i></button>
-                                                 <button type="button" class="btn btn-icon icon-left btn-danger"><i class="fas fa-times"></i></button>
+                                                 <button type="button" class="btn btn-icon icon-left btn-primary" data-id="<?= $value['news_categoryid']; ?>" data-name="<?= $value['news_category']; ?>" id="btn-edit"><i class="far fa-edit"></i></button>
+                                                 <a href="<?= site_url('admin/berita/hapus_kategori/' . $value['news_categoryid']) ?>" class="btn btn-icon icon-left btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
+                                                 <!-- <a href="" class="btn btn-icon icon-left btn-primary" data-id="<?= $value['news_categoryid']; ?>" data-name="<?= $value['news_category']; ?>" id="btn-edit"><i class="far fa-edit"></i></a> -->
+                                                 <!-- <button type="button" class="btn btn-icon icon-left btn-danger"><i class="fas fa-times"></i></button> -->
                                              </td>
                                          </div>
                                      </tr>
@@ -86,8 +86,8 @@
              </div>
              <form action="<?= site_url('admin/berita/simpan_kategori') ?>" method="post">
                  <div class="modal-body">
+                     <?= csrf_field() ?>
                      <div class="mb-3">
-                         <?= csrf_field() ?>
                          <label for="news_category" class="col-form-label">Kategori:</label>
                          <input type="text" name="news_category" class="form-control" id="news_category" required>
                      </div>
@@ -105,15 +105,15 @@
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
-                 <h1 class="modal-title fs-5" id="myModalLabel">Tambah Kategori</h1>
+                 <h1 class="modal-title fs-5" id="myModalLabel">Edit Kategori</h1>
                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
              </div>
-             <form action="<?= site_url('admin/berita/update_kategori') ?>" method="post">
+             <form action="" method="post">
                  <div class="modal-body">
+                     <?= csrf_field() ?>
                      <div class="mb-3">
-                         <?= csrf_field() ?>
                          <label for="news_category" class="col-form-label">Kategori:</label>
-                         <input type="text" name="news_category" class="form-control" id="news_category" value="<?= old('news_category', $value['news_category']); ?>" required>
+                         <input type="text" name="news_category" class="form-control" id="news_category" value="<?= old('news_category'); ?>" required>
                      </div>
                  </div>
                  <div class="modal-footer">
@@ -124,4 +124,15 @@
          </div>
      </div>
  </div>
+ <script>
+     $(document).ready(function() {
+         $('body').on('click', '#btn-edit', function() {
+             let id = $(this).data('id');
+             let name = $(this).data('name');
+             $('#ModalEdit form').attr('action', '<?= site_url() ?>/admin/berita/update_kategori/' + id)
+             $('#ModalEdit input[name="news_category"]').val(name);
+             $('#ModalEdit').modal('show');
+         });
+     });
+ </script>
  <?= $this->endSection(); ?>

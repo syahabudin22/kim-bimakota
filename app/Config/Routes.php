@@ -16,3 +16,4 @@ $routes->post('/admin/berita/update_berita/(:num)', 'Berita::update_berita/$1');
 $routes->get('/admin/berita/hapus_berita/(:any)', 'Berita::hapus_berita/$1');
 $routes->post('/admin/berita/simpan_kategori', 'Berita::simpan_kategori');
 $routes->post('/admin/berita/update_kategori/(:num)', 'Berita::update_kategori/$1');
+$routes->get('/admin/berita/hapus_kategori/(:num)', 'Berita::hapus_kategori/$1');

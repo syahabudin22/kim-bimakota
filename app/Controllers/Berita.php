@@ -60,7 +60,7 @@ class Berita extends BaseController
             'kategori' => $kategori,
             'news_category' => $this->request->getVar('news_category')
         ];
-        $save = $this->KategoriModel->update($data);
+        $save = $this->KategoriModel->update($news_categoryid, $data);
         if (!$save) {
             return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
         } else {
@@ -284,5 +284,12 @@ class Berita extends BaseController
         }
         $this->BeritaModel->delete($newsid);
         return redirect()->to(site_url('admin/berita'))->with('success', 'Data Berhasil Dihapus');
+    }
+
+    public function hapus_kategori($news_categoryid)
+    {
+        $kategori = $this->KategoriModel->find($news_categoryid);
+        $this->KategoriModel->delete($news_categoryid);
+        return redirect()->to(site_url('admin/berita/kategori'))->with('success', 'Data Berhasil Dihapus');
     }
 }
