@@ -149,12 +149,12 @@ class Berita extends BaseController
                 // Image upload
                 $avatar   = $this->request->getFile('news_image');
                 $namabaru = str_replace(' ', '-', $avatar->getName());
-                $avatar->move('upload/image/', $namabaru);
+                $avatar->move('upload/image/berita/', $namabaru);
                 // Create thumb
                 $image = \Config\Services::image()
-                    ->withFile('upload/image/' . $namabaru)
+                    ->withFile('upload/image/berita/' . $namabaru)
                     ->fit(100, 100, 'center')
-                    ->save('upload/image/thumbs/' . $namabaru);
+                    ->save('upload/image/berita/thumbs/' . $namabaru);
                 // masuk database
                 // $data = $this->request->getPost();
                 $enkrip = base64_encode($this->request->getVar('news_title'));
@@ -222,8 +222,8 @@ class Berita extends BaseController
             if (! empty($_FILES['news_image']['name'])) {
                 // cek apakah file gambar ada
                 $berita = $this->BeritaModel->find($newsid);
-                $gambarlama = 'upload/image/' . $berita['news_image'];
-                $thumbs = 'upload/image/thumbs/' . $berita['news_image'];
+                $gambarlama = 'upload/image/berita/' . $berita['news_image'];
+                $thumbs = 'upload/image/berita/thumbs/' . $berita['news_image'];
                 if ($gambarlama && $thumbs != '') {
                     unlink($gambarlama);
                     unlink($thumbs);
@@ -231,12 +231,12 @@ class Berita extends BaseController
                 // Image upload
                 $avatar   = $this->request->getFile('news_image');
                 $namabaru = str_replace(' ', '-', $avatar->getName());
-                $avatar->move('upload/image/', $namabaru);
+                $avatar->move('upload/image/berita/', $namabaru);
                 // Create thumb
                 $image = \Config\Services::image()
-                    ->withFile('upload/image/' . $namabaru)
+                    ->withFile('upload/image/berita/' . $namabaru)
                     ->fit(100, 100, 'center')
-                    ->save('upload/image/thumbs/' . $namabaru);
+                    ->save('upload/image/berita/thumbs/' . $namabaru);
                 // masuk database
                 // $enkrip = base64_encode($this->request->getVar('news_title'));
                 $data = [
@@ -276,8 +276,8 @@ class Berita extends BaseController
     public function hapus_berita($newsid = null)
     {
         $berita = $this->BeritaModel->find($newsid);
-        $gambarlama = 'upload/image/' . $berita['news_image'];
-        $thumbs = 'upload/image/thumbs/' . $berita['news_image'];
+        $gambarlama = 'upload/image/berita/' . $berita['news_image'];
+        $thumbs = 'upload/image/berita/thumbs/' . $berita['news_image'];
         if ($gambarlama && $thumbs != '') {
             unlink($gambarlama);
             unlink($thumbs);

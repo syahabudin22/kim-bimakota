@@ -21,6 +21,9 @@
                  <div class="card">
                      <div class="card-header">
                          <h4><?= $title; ?></h4>
+                         <div class="card-header-action">
+                             <a href="<?= site_url('admin/berita') ?>" class="btn btn-primary">Kembali</a>
+                         </div>
                      </div>
                      <div class="card-body">
                          <?php $errors = validation_errors(); ?>
@@ -64,7 +67,7 @@
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                  <div class="col-sm-2">
                                      <?php if ($berita['news_image'] != '') : ?>
-                                         <img src="<?= base_url('upload/image/' . $berita['news_image']) ?>" class="img-thumbnail" alt="...">
+                                         <img src="<?= base_url('upload/image/berita/' . $berita['news_image']) ?>" class="img-thumbnail" alt="...">
                                      <?php endif; ?>
                                  </div>
                                  <div class="col-sm-12 col-md-5">
@@ -81,7 +84,7 @@
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Gambar</label>
                                  <div class="col-sm-12 col-md-7">
                                      <?php if ($berita['news_image'] != '') : ?>
-                                         <img src="<?= base_url('upload/image/' . $berita['news_image']) ?>" class="img-thumbnail" alt="...">
+                                         <img src="<?= base_url('upload/image/berita/' . $berita['news_image']) ?>" class="img-thumbnail" alt="...">
                                      <?php endif; ?>
                                      <div id="image-preview" class="image-preview">
                                          <label for="image-upload" id="image-label">Upload Gambar</label>

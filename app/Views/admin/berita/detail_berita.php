@@ -28,7 +28,7 @@
                                  <div class="article-title">
                                      <div class="article-image">
                                          <?php if ($berita['news_image'] != '') : ?>
-                                             <img src="<?= base_url('upload/image/' . $berita['news_image']) ?>" class="img-fluid" alt="...">
+                                             <img src="<?= base_url('upload/image/berita/' . $berita['news_image']) ?>" class="img-fluid" alt="...">
                                          <?php endif; ?>
                                      </div>
                                  </div>
