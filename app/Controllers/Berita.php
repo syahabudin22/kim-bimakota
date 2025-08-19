@@ -224,7 +224,7 @@ class Berita extends BaseController
                 $berita = $this->BeritaModel->find($newsid);
                 $gambarlama = 'upload/image/berita/' . $berita['news_image'];
                 $thumbs = 'upload/image/berita/thumbs/' . $berita['news_image'];
-                if ($gambarlama && $thumbs != '') {
+                if (file_exists($gambarlama . $thumbs)) {
                     unlink($gambarlama);
                     unlink($thumbs);
                 }
@@ -278,7 +278,7 @@ class Berita extends BaseController
         $berita = $this->BeritaModel->find($newsid);
         $gambarlama = 'upload/image/berita/' . $berita['news_image'];
         $thumbs = 'upload/image/berita/thumbs/' . $berita['news_image'];
-        if ($gambarlama && $thumbs != '') {
+        if (file_exists($gambarlama . $thumbs)) {
             unlink($gambarlama);
             unlink($thumbs);
         }

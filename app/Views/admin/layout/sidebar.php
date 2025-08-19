@@ -7,7 +7,7 @@
                                 <li><a class="nav-link" href="<?= base_url() ?>admin/berita/kategori">Kategori Berita</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>Pengumuman</span></a></li>
+                        <li><a class="nav-link" href="<?= base_url() ?>admin/pengumuman"><i class="fas fa-pencil-ruler"></i> <span>Pengumuman</span></a></li>
                         <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>Slider</span></a></li>
                         <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>File</span></a></li>
                         <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>Link Terkait</span></a></li>
