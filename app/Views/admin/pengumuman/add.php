@@ -52,7 +52,7 @@
                                  <div class="col-sm-12 col-md-7">
                                      <label for="formFile" class="form-label">Upload Gambar</label>
                                      <input class="form-control <?= isset($errors['notice_image']) ? 'is-invalid' : null ?>" type="file" id="formFile" name="notice_image">
-                                     <div class="form-text">Gambar ini akan di tampilkan di berita halaman depan web (Ukuran File Maks 4MB)</div>
+                                     <div class="form-text">Upload Foto Pengumuman</div>
                                      <div class="invalid-feedback">
                                          <?= isset($errors['notice_image']) ? $errors['notice_image'] : null ?>
                                      </div>

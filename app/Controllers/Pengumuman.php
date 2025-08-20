@@ -54,11 +54,13 @@ class Pengumuman extends BaseController
             ],
             'notice_image' => [
                 'rules' => [
+                    'uploaded[news_image]',
                     'is_image[notice_image]',
                     'mime_in[notice_image,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
                     'max_size[notice_image,4068]',
                 ],
                 'errors' => [
+                    'uploaded' => 'Gambar tidak boleh kosong',
                     'is_image' => 'Harus file berbentuk gambar',
                     'mime_in' => 'Gambar harus berformat jpg/jpeg/gif/png/webp',
                     'max_size' => 'Gambar maksimal 4 Mb',
@@ -199,6 +201,11 @@ class Pengumuman extends BaseController
 
     public function delete($noticeid = null)
     {
+        $pengumuman = $this->PengumumanModel->find($noticeid);
+        $gambarlama = 'upload/image/pengumuman/' . $pengumuman['notice_image'];
+        if (file_exists($gambarlama)) {
+            unlink($gambarlama);
+        }
         // $pengumuman = $this->PengumumanModel->find($noticeid);
         $this->PengumumanModel->delete($noticeid);
         return redirect()->to(site_url('admin/pengumuman'))->with('success', 'Data Berhasil Dihapus');

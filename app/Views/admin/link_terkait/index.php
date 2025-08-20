@@ -19,7 +19,7 @@
                                 <div class="card-header">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <!-- <h4>Simple</h4> -->
-                                        <a href="<?= site_url('admin/pengumuman/add') ?>" class="btn btn-primary">Tambah</a>
+                                        <a href="<?= site_url('admin/link_terkait/add') ?>" class="btn btn-primary">Tambah</a>
                                     </div>
                                 </div>
                                 <?php if (session()->getFlashdata('success')) : ?>
@@ -48,27 +48,23 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">No</th>
-                                            <th scope="col">Judul</th>
-                                            <th scope="col">Posting</th>
-                                            <th scope="col">Tanggal</th>
-                                            <th scope="col">Gambar</th>
+                                            <th scope="col">Link Terkait</th>
+                                            <th scope="col">Foto</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach ($pengumuman as $key => $value) : ?>
+                                        <?php foreach ($link_terkait as $key => $value) : ?>
                                             <tr>
                                                 <th scope="row"><?= $key + 1 ?></th>
-                                                <td><?= $value->notice_title ?></td>
-                                                <td><?= $value->nama_instansi ?></td>
-                                                <td><?= $value->notice_date ?></td>
+                                                <td><?= $value->link_terkait_url ?></td>
                                                 <td>
-                                                    <?php if ($value->notice_image != '') : ?>
-                                                        <img src="<?= base_url('upload/image/pengumuman/' . $value->notice_image) ?>" class="img-thumbnail" width="100px" height="100px" alt="...">
+                                                    <?php if ($value->link_terkait_image != '') : ?>
+                                                        <img src="<?= base_url('upload/image/link_terkait/' . $value->link_terkait_image) ?>" class="img-thumbnail" width="100px" height="100px" alt="...">
                                                     <?php endif; ?>
                                                 </td>
-                                                <?php if ($value->notice_status == 'T') :  ?>
+                                                <?php if ($value->link_terkait_status == 'T') :  ?>
                                                     <td class="text-center">
                                                         <div class="badge badge-success">Active</div>
                                                     </td>
@@ -79,9 +75,9 @@
                                                 <?php endif; ?>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="<?= site_url('admin/pengumuman/detail/' . $value->noticeid) ?>" class="btn btn-icon btn-info"><i class="fas fa-eye"></i></a>
-                                                        <a href="<?= site_url('admin/pengumuman/edit/' . $value->noticeid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
-                                                        <a href="<?= site_url('admin/pengumuman/hapus/' . $value->noticeid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
+                                                        <!-- <a href="<?= site_url('admin/link_terkait/detail/' . $value->link_terkaitid) ?>" class="btn btn-icon btn-info"><i class="fas fa-eye"></i></a> -->
+                                                        <a href="<?= site_url('admin/link_terkait/edit/' . $value->link_terkaitid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
+                                                        <a href="<?= site_url('admin/link_terkait/hapus/' . $value->link_terkaitid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>

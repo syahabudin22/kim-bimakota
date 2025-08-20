@@ -26,3 +26,24 @@ $routes->get('/admin/pengumuman/detail/(:any)', 'Pengumuman::show/$1');
 $routes->get('/admin/pengumuman/edit/(:num)', 'Pengumuman::edit/$1');
 $routes->post('/admin/pengumuman/update/(:num)', 'Pengumuman::update/$1');
 $routes->get('/admin/pengumuman/hapus/(:any)', 'Pengumuman::delete/$1');
+//slider
+$routes->get('/admin/slider', 'Slider::index');
+$routes->get('/admin/slider/add', 'Slider::new');
+$routes->post('/admin/slider/create', 'Slider::create');
+$routes->get('/admin/slider/edit/(:num)', 'Slider::edit/$1');
+$routes->post('/admin/slider/update/(:num)', 'Slider::update/$1');
+$routes->get('/admin/slider/hapus/(:any)', 'Slider::delete/$1');
+//link terkait
+$routes->get('/admin/link_terkait', 'Link::index');
+$routes->get('/admin/link_terkait/add', 'Link::new');
+$routes->post('/admin/link_terkait/create', 'Link::create');
+$routes->get('/admin/link_terkait/edit/(:num)', 'Link::edit/$1');
+$routes->post('/admin/link_terkait/update/(:num)', 'Link::update/$1');
+$routes->get('/admin/link_terkait/hapus/(:any)', 'Link::delete/$1');
+//file
+$routes->get('/admin/file', 'File::index');
+$routes->get('/admin/file/add', 'File::new');
+$routes->post('/admin/file/create', 'File::create');
+$routes->get('/admin/file/edit/(:num)', 'File::edit/$1');
+$routes->post('/admin/file/update/(:num)', 'File::update/$1');
+$routes->get('/admin/file/hapus/(:any)', 'File::delete/$1');

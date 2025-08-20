@@ -8,9 +8,9 @@
                             </ul>
                         </li>
                         <li><a class="nav-link" href="<?= base_url() ?>admin/pengumuman"><i class="fas fa-pencil-ruler"></i> <span>Pengumuman</span></a></li>
-                        <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>Slider</span></a></li>
-                        <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>File</span></a></li>
-                        <li><a class="nav-link" href=""><i class="fas fa-pencil-ruler"></i> <span>Link Terkait</span></a></li>
+                        <li><a class="nav-link" href="<?= base_url() ?>admin/slider"><i class="fas fa-window-maximize"></i> <span>Slider</span></a></li>
+                        <li><a class="nav-link" href="<?= base_url() ?>admin/file"><i class="fas fa-file"></i> <span>File</span></a></li>
+                        <li><a class="nav-link" href="<?= base_url() ?>admin/link_terkait"><i class="fas fa-folder"></i> <span>Link Terkait</span></a></li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Pengaturan KIM</span></a>
                             <ul class="dropdown-menu">
