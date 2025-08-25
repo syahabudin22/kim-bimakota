@@ -43,7 +43,7 @@
                                  <div class="col-sm-12 col-md-7">
                                      <label for="formFile" class="form-label">Upload File</label>
                                      <input class="form-control <?= isset($errors['file']) ? 'is-invalid' : null ?>" type="file" id="formFile" name="file">
-                                     <div class="form-text">Upload File (Ukuran File Maks 2MB)</div>
+                                     <div class="form-text">Upload File (Ukuran File Maks 20MB)</div>
                                      <div class="invalid-feedback">
                                          <?= isset($errors['file']) ? $errors['file'] : null ?>
                                      </div>

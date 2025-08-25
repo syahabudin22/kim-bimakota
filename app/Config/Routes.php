@@ -47,3 +47,10 @@ $routes->post('/admin/file/create', 'File::create');
 $routes->get('/admin/file/edit/(:num)', 'File::edit/$1');
 $routes->post('/admin/file/update/(:num)', 'File::update/$1');
 $routes->get('/admin/file/hapus/(:any)', 'File::delete/$1');
+//folder foto
+$routes->get('/admin/galeri/folder_foto', 'Folder_foto::index');
+$routes->get('/admin/galeri/folder_foto/add', 'Folder_foto::new');
+$routes->post('/admin/galeri/folder_foto/create', 'Folder_foto::create');
+$routes->get('/admin/galeri/folder_foto/edit/(:num)', 'Folder_foto::edit/$1');
+$routes->post('/admin/galeri/folder_foto/update/(:num)', 'Folder_foto::update/$1');
+$routes->get('/admin/galeri/folder_foto/hapus/(:any)', 'Folder_foto::delete/$1');
