@@ -16,6 +16,7 @@ class PengumumanModel extends Model
         $builder = $this->db->table('tbl_notice');
         $builder->select('*');
         $builder->join('tbl_user', 'tbl_user.userid = tbl_notice.userid');
+        $builder->orderBy('tbl_notice.noticeid', 'DESC');
         $query = $builder->get();
         return $query->getResult();
     }

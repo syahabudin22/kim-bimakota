@@ -48,7 +48,7 @@ class Slider extends BaseController
             ],
             'slider_image' => [
                 'rules' => [
-                    'uploaded[news_image]',
+                    'uploaded[slider_image]',
                     'is_image[slider_image]',
                     'mime_in[slider_image,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
                     'max_size[slider_image,4068]',

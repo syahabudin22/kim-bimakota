@@ -17,6 +17,7 @@ class BeritaModel extends Model
         $builder->select('*');
         $builder->join('tbl_news_category', 'tbl_news_category.news_categoryid = tbl_news.news_categoryid');
         $builder->join('tbl_user', 'tbl_user.userid = tbl_news.userid');
+        $builder->orderBy('tbl_news.newsid', 'DESC');
         $query = $builder->get();
         return $query->getResult();
     }

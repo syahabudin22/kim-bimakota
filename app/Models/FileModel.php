@@ -16,6 +16,7 @@ class FileModel extends Model
         $builder = $this->db->table('tbl_file');
         $builder->select('*');
         $builder->join('tbl_user', 'tbl_user.userid = tbl_file.userid');
+        $builder->orderBy('tbl_file.fileid', 'DESC');
         $query = $builder->get();
         return $query->getResult();
     }

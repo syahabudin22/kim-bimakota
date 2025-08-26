@@ -54,3 +54,11 @@ $routes->post('/admin/galeri/folder_foto/create', 'Folder_foto::create');
 $routes->get('/admin/galeri/folder_foto/edit/(:num)', 'Folder_foto::edit/$1');
 $routes->post('/admin/galeri/folder_foto/update/(:num)', 'Folder_foto::update/$1');
 $routes->get('/admin/galeri/folder_foto/hapus/(:any)', 'Folder_foto::delete/$1');
+//foto
+//folder foto
+$routes->get('/admin/galeri/foto/(:any)', 'Foto::index/$1');
+$routes->get('/admin/galeri/foto/add', 'Foto::new');
+$routes->post('/admin/galeri/foto/create', 'Foto::create');
+$routes->get('/admin/galeri/foto/edit/(:num)', 'Foto::edit/$1');
+$routes->post('/admin/galeri/foto/update/(:num)', 'Foto::update/$1');
+$routes->get('/admin/galeri/foto/hapus/(:any)', 'Foto::delete/$1');

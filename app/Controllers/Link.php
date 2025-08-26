@@ -48,10 +48,10 @@ class Link extends BaseController
             ],
             'link_terkait_image' => [
                 'rules' => [
-                    'uploaded[news_image]',
-                    'is_image[link_image]',
-                    'mime_in[link_image,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
-                    'max_size[link_image,4068]',
+                    'uploaded[link_terkait_image]',
+                    'is_image[link_terkait_image]',
+                    'mime_in[link_terkait_image,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                    'max_size[link_terkait_image,4068]',
                 ],
                 'errors' => [
                     'uploaded' => 'Gambar tidak boleh kosong',

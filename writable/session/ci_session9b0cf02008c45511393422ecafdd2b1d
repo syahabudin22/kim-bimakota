@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1755741274;_ci_previous_url|s:36:"http://localhost:8080/admin/file/add";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:9:"nama_file";s:4:"coba";s:11:"file_status";s:1:"T";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_validation_errors|a:1:{s:9:"Nama_file";s:33:"Nama file file tidak boleh kosong";}

@@ -62,15 +62,15 @@
                                                 <td><?= $value->folder_photo_title ?></td>
                                                 <td>
                                                     <?php if ($value->folder_photo_img != '') : ?>
-                                                        <img src="<?= base_url('upload/image/folder_foto/' . $value->folder_photo_img) ?>" class="img-thumbnail" width="100px" height="100px" alt="...">
+                                                        <img src="<?= base_url('upload/image/galeri/foto_utama/' . $value->folder_photo_img) ?>" class="img-thumbnail" width="100px" height="100px" alt="...">
                                                     <?php endif; ?>
                                                 </td>
-                                                <td><a href="<?= site_url('admin/galeri/foto/index/' . $value->folder_photoid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i>Upload Foto</a></td>
+                                                <td><a href="<?= site_url('admin/galeri/foto/' . $value->folder_photoid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i>Upload Foto</a></td>
                                                 <td><?= $value->nama_instansi ?></td>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="<?= site_url('admin/folder_foto/edit/' . $value->folder_photoid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
-                                                        <a href="<?= site_url('admin/folder_foto/hapus/' . $value->folder_photoid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
+                                                        <a href="<?= site_url('admin/galeri/folder_foto/edit/' . $value->folder_photoid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
+                                                        <a href="<?= site_url('admin/galeri/folder_foto/hapus/' . $value->folder_photoid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>

@@ -54,7 +54,7 @@ class Pengumuman extends BaseController
             ],
             'notice_image' => [
                 'rules' => [
-                    'uploaded[news_image]',
+                    'uploaded[notice_image]',
                     'is_image[notice_image]',
                     'mime_in[notice_image,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
                     'max_size[notice_image,4068]',

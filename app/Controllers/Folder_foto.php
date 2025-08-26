@@ -29,11 +29,11 @@ class Folder_foto extends BaseController
 
     public function new()
     {
-        $folderfoto = $this->FolderfotoModel->findAll();
+        $folder_foto = $this->FolderfotoModel->findAll();
 
         $data = [
             'title' => 'Folder Foto Berita',
-            'folderfoto' => $folderfoto
+            'folder_foto' => $folder_foto
         ];
         return view('admin/galeri/folder_foto/add', $data);
     }
@@ -49,7 +49,7 @@ class Folder_foto extends BaseController
             ],
             'folder_photo_img' => [
                 'rules' => [
-                    'uploaded[news_image]',
+                    'uploaded[folder_photo_img]',
                     'is_image[folder_photo_img]',
                     'mime_in[folder_photo_img,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
                     'max_size[folder_photo_img,4068]',
@@ -70,7 +70,7 @@ class Folder_foto extends BaseController
                 // Image upload
                 $avatar   = $this->request->getFile('folder_photo_img');
                 $namabaru = str_replace(' ', '-', $avatar->getName());
-                $avatar->move('upload/image/foto/', $namabaru);
+                $avatar->move('upload/image/galeri/foto_utama/', $namabaru);
                 // masuk database
                 $data = [
                     'folder_photo_title' => $this->request->getVar('folder_photo_title'),
@@ -90,11 +90,11 @@ class Folder_foto extends BaseController
 
     public function edit($folder_photoid = null)
     {
-        $folderfoto = $this->FolderfotoModel->find($folder_photoid);
+        $folder_foto = $this->FolderfotoModel->find($folder_photoid);
 
         $data = [
             'title' => 'Folder Foto Berita',
-            'folderfoto' => $folderfoto
+            'folder_foto' => $folder_foto
         ];
         return view('admin/galeri/folder_foto/edit', $data);
     }
@@ -111,7 +111,7 @@ class Folder_foto extends BaseController
             ],
             'folder_photo_img' => [
                 'rules' => [
-                    'uploaded[news_image]',
+                    'uploaded[folder_photo_img]',
                     'is_image[folder_photo_img]',
                     'mime_in[folder_photo_img,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
                     'max_size[folder_photo_img,4068]',
@@ -129,10 +129,16 @@ class Folder_foto extends BaseController
             return redirect()->back()->withInput();
         } else {
             if (! empty($_FILES['folder_photo_img']['name'])) {
+                // cek apakah file gambar ada
+                $folder_photo = $this->FolderfotoModel->find($folder_photoid);
+                $gambarlama = 'upload/image/galeri/foto_utama/' . $folder_photo['folder_photo_img'];
+                if ($folder_photo['folder_photo_img'] != '' && file_exists($gambarlama)) {
+                    unlink($gambarlama);
+                }
                 // Image upload
                 $avatar   = $this->request->getFile('folder_photo_img');
                 $namabaru = str_replace(' ', '-', $avatar->getName());
-                $avatar->move('upload/image/foto/', $namabaru);
+                $avatar->move('upload/image/galeri/foto_utama/', $namabaru);
                 // masuk database
                 $data = [
                     'folder_photo_title' => $this->request->getVar('folder_photo_title'),
@@ -161,15 +167,15 @@ class Folder_foto extends BaseController
         }
     }
 
-    public function delete($noticeid = null)
+    public function delete($folder_photoid = null)
     {
-        $pengumuman = $this->PengumumanModel->find($noticeid);
-        $gambarlama = 'upload/image/pengumuman/' . $pengumuman['notice_image'];
-        if (file_exists($gambarlama)) {
+        $folder_photo = $this->FolderfotoModel->find($folder_photoid);
+        $gambarlama = 'upload/image/galeri/foto_utama/' . $folder_photo['folder_photo_img'];
+        if ($folder_photo['folder_photo_img'] != '' && file_exists($gambarlama)) {
             unlink($gambarlama);
         }
-        // $pengumuman = $this->PengumumanModel->find($noticeid);
-        $this->PengumumanModel->delete($noticeid);
-        return redirect()->to(site_url('admin/pengumuman'))->with('success', 'Data Berhasil Dihapus');
+        // $folder_photo = $this->FolderfotoModel->find($folder_photoid);
+        $this->FolderfotoModel->delete($folder_photoid);
+        return redirect()->to(site_url('admin/galeri/folder_foto'))->with('success', 'Data Berhasil Dihapus');
     }
 }

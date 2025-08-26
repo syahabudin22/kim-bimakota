@@ -16,6 +16,7 @@ class SliderModel extends Model
         $builder = $this->db->table('tbl_slider');
         $builder->select('*');
         $builder->join('tbl_user', 'tbl_user.userid = tbl_slider.userid');
+        $builder->orderBy('tbl_slider.sliderid', 'DESC');
         $query = $builder->get();
         return $query->getResult();
     }
