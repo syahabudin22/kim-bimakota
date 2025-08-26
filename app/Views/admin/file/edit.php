@@ -41,7 +41,7 @@
                              <div class="form-group row mb-4">
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                  <div class="col-sm-12 col-md-7">
-                                     <label for="formFile" class="form-label">Upload Gambar</label>
+                                     <label for="formFile" class="form-label">Upload File</label>
                                      <input class="form-control <?= isset($errors['file']) ? 'is-invalid' : null ?>" type="file" id="formFile" name="file">
                                      <div class="form-text">Upload File (Ukuran File Maks 2MB)</div>
                                      <div class="form-text">Jika tidak ingin mengganti file maka cukup dikosongkan saja</div>

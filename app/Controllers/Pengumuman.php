@@ -146,7 +146,7 @@ class Pengumuman extends BaseController
                 // cek apakah file gambar ada
                 $pengumuman = $this->PengumumanModel->find($noticeid);
                 $gambarlama = 'upload/image/pengumuman/' . $pengumuman['notice_image'];
-                if (file_exists($gambarlama)) {
+                if ($pengumuman['notice_image'] != '' && file_exists($gambarlama)) {
                     unlink($gambarlama);
                 }
                 // Image upload
@@ -203,7 +203,7 @@ class Pengumuman extends BaseController
     {
         $pengumuman = $this->PengumumanModel->find($noticeid);
         $gambarlama = 'upload/image/pengumuman/' . $pengumuman['notice_image'];
-        if (file_exists($gambarlama)) {
+        if ($pengumuman['notice_image'] != '' && file_exists($gambarlama)) {
             unlink($gambarlama);
         }
         // $pengumuman = $this->PengumumanModel->find($noticeid);

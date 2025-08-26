@@ -9,7 +9,7 @@ class FileModel extends Model
     // ...
     protected $table =  'tbl_file';
     protected $primaryKey = 'fileid';
-    protected $allowedFields = ['nama_file',  'file', 'file_status', 'userid'];
+    protected $allowedFields = ['menuid', 'nama_file', 'file', 'file_status', 'userid'];
 
     function getAll()
     {

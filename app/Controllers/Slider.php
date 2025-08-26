@@ -130,7 +130,7 @@ class Slider extends BaseController
                 // cek apakah file gambar ada
                 $slider = $this->SliderModel->find($sliderid);
                 $gambarlama = 'upload/image/slider/' . $slider['slider_image'];
-                if (file_exists($gambarlama)) {
+                if ($slider['slider_image'] != '' && file_exists($gambarlama)) {
                     unlink($gambarlama);
                 }
                 // Image upload
@@ -183,7 +183,11 @@ class Slider extends BaseController
 
     public function delete($sliderid = null)
     {
-        // $slider = $this->sliderModel->find($sliderid);
+        $slider = $this->SliderModel->find($sliderid);
+        $gambarlama = 'upload/image/slider/' . $slider['slider_image'];
+        if ($slider['slider_image'] != '' && file_exists($gambarlama)) {
+            unlink($gambarlama);
+        }
         $this->SliderModel->delete($sliderid);
         return redirect()->to(site_url('admin/slider'))->with('success', 'Data Berhasil Dihapus');
     }

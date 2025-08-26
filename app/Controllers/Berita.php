@@ -165,7 +165,7 @@ class Berita extends BaseController
                     'news_text' => $this->request->getVar('news_text'),
                     'news_image' => $namabaru,
                     'news_views' => 0,
-                    'news_status' => 'T',
+                    'news_status' => $this->request->getVar('news_status'),
                     'news_date' => date('Y-m-d H:i:s'),
                     'news_date_modified' => date('Y-m-d H:i:s'),
                     'userid' => 24
@@ -224,7 +224,7 @@ class Berita extends BaseController
                 $berita = $this->BeritaModel->find($newsid);
                 $gambarlama = 'upload/image/berita/' . $berita['news_image'];
                 $thumbs = 'upload/image/berita/thumbs/' . $berita['news_image'];
-                if (file_exists($gambarlama . $thumbs)) {
+                if ($berita['news_image'] != '' && file_exists($gambarlama . $thumbs)) {
                     unlink($gambarlama);
                     unlink($thumbs);
                 }
@@ -278,7 +278,7 @@ class Berita extends BaseController
         $berita = $this->BeritaModel->find($newsid);
         $gambarlama = 'upload/image/berita/' . $berita['news_image'];
         $thumbs = 'upload/image/berita/thumbs/' . $berita['news_image'];
-        if (file_exists($gambarlama . $thumbs)) {
+        if ($berita['news_image'] != '' && file_exists($gambarlama . $thumbs)) {
             unlink($gambarlama);
             unlink($thumbs);
         }

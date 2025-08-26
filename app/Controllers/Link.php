@@ -130,7 +130,7 @@ class Link extends BaseController
                 // cek apakah file gambar ada
                 $link_terkait = $this->LinkModel->find($link_terkaitid);
                 $gambarlama = 'upload/image/link_terkait/' . $link_terkait['link_terkait_image'];
-                if (file_exists($gambarlama)) {
+                if ($link_terkait['link_terkait_image'] != '' && file_exists($gambarlama)) {
                     unlink($gambarlama);
                 }
                 // Image upload
@@ -179,7 +179,11 @@ class Link extends BaseController
 
     public function delete($link_terkaitid = null)
     {
-        // $link_terkait = $this->link_terkaitModel->find($link_terkaitid);
+        $link_terkait = $this->LinkModel->find($link_terkaitid);
+        $gambarlama = 'upload/image/link_terkait/' . $link_terkait['link_terkait_image'];
+        if ($link_terkait['link_terkait_image'] != '' && file_exists($gambarlama)) {
+            unlink($gambarlama);
+        }
         $this->LinkModel->delete($link_terkaitid);
         return redirect()->to(site_url('admin/link_terkait'))->with('success', 'Data Berhasil Dihapus');
     }

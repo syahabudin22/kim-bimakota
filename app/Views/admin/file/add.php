@@ -25,6 +25,28 @@
                              <a href="<?= site_url('admin/file') ?>" class="btn btn-primary">Kembali</a>
                          </div>
                      </div>
+                     <?php if (session()->getFlashdata('success')) : ?>
+                         <div class="alert alert-success alert-dismissible show fade">
+                             <div class="alert-body">
+                                 <button class="close" data-dismiss="alert">
+                                     <span>&times;</span>
+                                 </button>
+                                 Success !
+                             </div>
+                             <?= session()->getFlashdata('success'); ?>
+                         </div>
+                     <?php endif; ?>
+                     <?php if (session()->getFlashdata('errors')) : ?>
+                         <div class="alert alert-danger alert-dismissible show fade">
+                             <div class="alert-body">
+                                 <button class="close" data-dismiss="alert">
+                                     <span>&times;</span>
+                                 </button>
+                                 Error !
+                             </div>
+                             <?= session()->getFlashdata('errors'); ?>
+                         </div>
+                     <?php endif; ?>
                      <div class="card-body">
                          <?php $errors = validation_errors(); ?>
                          <form action="<?= site_url('admin/file/create') ?>" method="post" enctype="multipart/form-data" autocomplete="off">
@@ -42,7 +64,7 @@
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                  <div class="col-sm-12 col-md-7">
                                      <label for="formFile" class="form-label">Upload File</label>
-                                     <input class="form-control <?= isset($errors['file']) ? 'is-invalid' : null ?>" type="file" id="formFile" name="file">
+                                     <input class="form-control <?= isset($errors['file']) ? 'is-invalid' : null ?>" type="file" id="formFile" name="file" value="<?= old('file'); ?>">
                                      <div class="form-text">Upload File (Ukuran File Maks 2MB)</div>
                                      <div class="invalid-feedback">
                                          <?= isset($errors['file']) ? $errors['file'] : null ?>

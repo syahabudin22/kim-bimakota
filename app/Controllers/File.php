@@ -56,7 +56,7 @@ class File extends BaseController
                 'rules' => [
                     'uploaded[file]',
                     'max_size[file,2048]',
-                    'ext_in[file,pdf]'
+                    'ext_in[file,pdf]',
                 ],
                 'errors' => [
                     'uploaded' => 'File tidak boleh kosong',
@@ -124,7 +124,7 @@ class File extends BaseController
                 'rules' => [
                     'uploaded[file]',
                     'max_size[file,2048]',
-                    'ext_in[file,pdf]'
+                    'ext_in[file,pdf]',
                 ],
                 'errors' => [
                     'uploaded' => 'File tidak boleh kosong',
@@ -201,7 +201,6 @@ class File extends BaseController
         if (file_exists($file2)) {
             unlink($file2);
         }
-        // $file = $this->FileModel->find($fileid);
         $this->FileModel->delete($fileid);
         return redirect()->to(site_url('admin/file'))->with('success', 'Data Berhasil Dihapus');
     }
