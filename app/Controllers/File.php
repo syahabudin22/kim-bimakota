@@ -40,7 +40,7 @@ class File extends BaseController
     public function create()
     {
         $validate = $this->validate([
-            'Nama_file' => [
+            'nama_file' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Nama file file tidak boleh kosong',
@@ -55,12 +55,12 @@ class File extends BaseController
             'file' => [
                 'rules' => [
                     'uploaded[file]',
-                    'max_size[file,2048]',
-                    'ext_in[file,pdf]',
+                    'max_size[file,20480]',
+                    'ext_in[file,pdf]'
                 ],
                 'errors' => [
                     'uploaded' => 'File tidak boleh kosong',
-                    'max_size' => 'File maksimal 2 Mb',
+                    'max_size' => 'File maksimal 20 Mb',
                     'ext_in' => 'File harus berbentuk pdf',
                 ],
             ],
@@ -72,11 +72,11 @@ class File extends BaseController
             if (! empty($_FILES['file']['name'])) {
                 // Image upload
                 $avatar   = $this->request->getFile('file');
-                $namabaru = str_replace(' ', '-', $avatar->getName());
+                $namabaru = $avatar->getName();
                 $avatar->move('upload/file/', $namabaru);
                 // masuk database
                 $data = [
-                    'menuid' => $this->request->getVar('menuid'),
+                    'menuid' => 19,
                     'nama_file' => $this->request->getVar('nama_file'),
                     'file' => $namabaru,
                     'file_status' => $this->request->getVar('file_status'),
@@ -108,7 +108,7 @@ class File extends BaseController
     public function update($fileid = null)
     {
         $validate = $this->validate([
-            'Nama_file' => [
+            'nama_file' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Nama file file tidak boleh kosong',
@@ -123,12 +123,12 @@ class File extends BaseController
             'file' => [
                 'rules' => [
                     'uploaded[file]',
-                    'max_size[file,2048]',
-                    'ext_in[file,pdf]',
+                    'max_size[file,20480]',
+                    'ext_in[file,pdf]'
                 ],
                 'errors' => [
                     'uploaded' => 'File tidak boleh kosong',
-                    'max_size' => 'File maksimal 2 Mb',
+                    'max_size' => 'File maksimal 20 Mb',
                     'ext_in' => 'File harus berbentuk pdf',
                 ],
             ],
@@ -141,17 +141,17 @@ class File extends BaseController
                 // cek apakah file gambar ada
                 $file = $this->FileModel->find($fileid);
                 $filelama = 'upload/file/' . $file['file'];
-                if (file_exists($filelama)) {
+                if ($file['file'] != '' && file_exists($filelama)) {
                     unlink($filelama);
                 }
                 // Image upload
                 $avatar   = $this->request->getFile('file');
-                $namabaru = str_replace(' ', '-', $avatar->getName());
+                $namabaru = $avatar->getName();
                 $avatar->move('upload/file/', $namabaru);
                 // masuk database
                 // $enkrip = base64_encode($this->request->getVar('file_title'));
                 $data = [
-                    'menuid' => $this->request->getVar('menuid'),
+                    'menuid' => 19,
                     'nama_file' => $this->request->getVar('nama_file'),
                     'file' => $namabaru,
                     'file_status' => $this->request->getVar('file_status'),
@@ -167,7 +167,7 @@ class File extends BaseController
             }
             // $enkrip = base6has4_encode($this->request->getVar('file_title'));
             $data = [
-                'menuid' => $this->request->getVar('menuid'),
+                'menuid' => 19,
                 'nama_file' => $this->request->getVar('nama_file'),
                 'file_status' => $this->request->getVar('file_status'),
                 'userid' => 24
@@ -198,7 +198,7 @@ class File extends BaseController
     {
         $file = $this->FileModel->find($fileid);
         $file2 = 'upload/file/' . $file['file'];
-        if (file_exists($file2)) {
+        if ($file['file'] != '' && file_exists($file2)) {
             unlink($file2);
         }
         $this->FileModel->delete($fileid);

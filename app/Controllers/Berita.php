@@ -288,7 +288,6 @@ class Berita extends BaseController
 
     public function hapus_kategori($news_categoryid)
     {
-        $kategori = $this->KategoriModel->find($news_categoryid);
         $this->KategoriModel->delete($news_categoryid);
         return redirect()->to(site_url('admin/berita/kategori'))->with('success', 'Data Berhasil Dihapus');
     }

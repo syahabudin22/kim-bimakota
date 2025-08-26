@@ -62,7 +62,7 @@
                                                 <td><?= $value->nama_file ?></td>
                                                 <td>
                                                     <?php if ($value->file != '') : ?>
-                                                        <a href="#"><?= $value->file; ?></a>
+                                                        <a href="<?= base_url('upload/file/' . $value->file) ?>"><?= $value->file; ?></a>
                                                     <?php endif; ?>
                                                 </td>
                                                 <td><?= $value->nama_instansi ?></td>
