@@ -33,7 +33,7 @@
                                  <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                  <div class="col-sm-2">
                                      <?php if ($foto['photo_img'] != '') : ?>
-                                         <img src="<?= base_url('upload/image/galeri/foto_utama/' . $foto['photo_img']) ?>" class="img-thumbnail" alt="...">
+                                         <img src="<?= base_url('upload/image/galeri/foto/' . $foto['photo_img']) ?>" class="img-thumbnail" alt="...">
                                      <?php endif; ?>
                                  </div>
                                  <div class="col-sm-12 col-md-5">

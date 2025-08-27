@@ -16,7 +16,7 @@ class FolderfotoModel extends Model
         $builder = $this->db->table('tbl_folder_photo');
         $builder->select('*');
         $builder->join('tbl_user', 'tbl_user.userid = tbl_folder_photo.userid');
-        $builder->orderBy('folder_photoid', 'DESC');
+        $builder->orderBy('tbl_folder_photo.folder_photoid', 'DESC');
         $query = $builder->get();
         return $query->getResult();
     }

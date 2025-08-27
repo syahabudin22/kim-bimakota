@@ -19,7 +19,7 @@
                                 <div class="card-header">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <!-- <h4>Simple</h4> -->
-                                        <a href="<?= site_url('admin/galeri/foto/add'); ?>" class="btn btn-primary">Tambah</a>
+                                        <a href="<?= site_url('admin/galeri/foto/add/' . $folder_foto['folder_photoid']); ?>" class="btn btn-primary">Tambah</a>
                                     </div>
                                 </div>
                                 <?php if (session()->getFlashdata('success')) : ?>
@@ -63,8 +63,8 @@
                                                 </td>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="<?= site_url('admin/galeri/foto/edit/' . $value->photoid) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
-                                                        <a href="<?= site_url('admin/galeri/foto/hapus/' . $value->folder_photoid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
+                                                        <a href="<?= site_url('admin/galeri/foto/edit/' . $value->photoid . '/' . $folder_foto['folder_photoid']) ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
+                                                        <a href="<?= site_url('admin/galeri/foto/hapus/' . $value->photoid) ?>" class="btn btn-icon btn-danger" onclick="confirmation(event)" id="hapus"><i class="fas fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>
