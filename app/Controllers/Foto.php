@@ -33,18 +33,18 @@ class Foto extends BaseController
         return view('admin/galeri/foto/index', $data);
     }
 
-    public function new($folder_photoid = null)
+    public function new($folder_photoid)
     {
-        $foto = $this->FotoModel->getAll($folder_photoid);
+        $foto = $this->FotoModel->find($folder_photoid);
 
         $data = [
             'title' => 'Foto Berita',
             'foto' => $foto
         ];
-        return view('admin/galeri/foto/add', $data);
+        return view('admin/galeri/foto/add/' . $folder_photoid, $data);
     }
 
-    public function edit($photoid = null)
+    public function edit($photoid = null, $folder_photoid = null)
     {
         $foto = $this->FotoModel->find($photoid);
 
@@ -52,6 +52,6 @@ class Foto extends BaseController
             'title' => 'Folder Foto Berita',
             'foto' => $foto
         ];
-        return view('admin/galeri/folder_foto/edit', $data);
+        return view('admin/galeri/folder_foto/edit/' . $photoid . '/' . $folder_photoid, $data);
     }
 }

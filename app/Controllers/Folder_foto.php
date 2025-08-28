@@ -146,11 +146,11 @@ class Folder_foto extends BaseController
                     'userid' => 24
                 ];
                 // dd($data);
-                $save = $this->FolderfotoModel->insert($data);
+                $save = $this->FolderfotoModel->update($folder_photoid, $data);
                 if (!$save) {
-                    return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
+                    return redirect()->back()->withInput()->with('errors', 'Data Gagal Diubah');
                 } else {
-                    return redirect()->to(site_url('admin/galeri/folder_foto'))->with('success', 'Data Berhasil Disimpan');
+                    return redirect()->to(site_url('admin/galeri/folder_foto'))->with('success', 'Data Berhasil Diubah');
                 }
             }
         }
@@ -159,11 +159,11 @@ class Folder_foto extends BaseController
             'userid' => 24
         ];
         // dd($data);
-        $save = $this->FolderfotoModel->insert($data);
+        $save = $this->FolderfotoModel->update($folder_photoid, $data);
         if (!$save) {
-            return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
+            return redirect()->back()->withInput()->with('errors', 'Data Gagal Diubah');
         } else {
-            return redirect()->to(site_url('admin/galeri/folder_foto'))->with('success', 'Data Berhasil Disimpan');
+            return redirect()->to(site_url('admin/galeri/folder_foto'))->with('success', 'Data Berhasil Diubah');
         }
     }
 

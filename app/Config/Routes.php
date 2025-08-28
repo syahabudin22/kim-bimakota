@@ -61,3 +61,10 @@ $routes->post('/admin/galeri/foto/create', 'Foto::create');
 $routes->get('/admin/galeri/foto/edit/(:num)/(:any)', 'Foto::edit/$1/$2');
 $routes->post('/admin/galeri/foto/update/(:num)', 'Foto::update/$1');
 $routes->get('/admin/galeri/foto/hapus/(:any)', 'Foto::delete/$1');
+//video
+$routes->get('/admin/galeri/video', 'Video::index');
+$routes->get('/admin/galeri/video/add', 'Video::new');
+$routes->post('/admin/galeri/video/create', 'Video::create');
+$routes->get('/admin/galeri/video/edit/(:num)', 'Video::edit/$1');
+$routes->post('/admin/galeri/video/update/(:num)', 'Video::update/$1');
+$routes->get('/admin/galeri/video/hapus/(:any)', 'Video::delete/$1');
