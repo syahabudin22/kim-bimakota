@@ -1,0 +1,579 @@
+DEBUG - 2025-09-01 01:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 01:35:03 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/pengaturan_kim/kecamatan]
+in APPPATH\Views\admin\pengaturan_kim\kecamatan\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kecamatan/index', [], true)
+ 4 APPPATH\Controllers\Kecamatan.php(25): view('admin/pengaturan_kim/kecamatan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kecamatan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kecamatan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 01:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 01:35:10 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/pengaturan_kim/kecamatan]
+in APPPATH\Views\admin\pengaturan_kim\kecamatan\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kecamatan/index', [], true)
+ 4 APPPATH\Controllers\Kecamatan.php(25): view('admin/pengaturan_kim/kecamatan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kecamatan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kecamatan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 01:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 01:35:39 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/pengaturan_kim/kecamatan]
+in APPPATH\Views\admin\pengaturan_kim\kecamatan\index.php on line 63.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kecamatan/index', [], true)
+ 4 APPPATH\Controllers\Kecamatan.php(25): view('admin/pengaturan_kim/kecamatan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kecamatan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kecamatan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 01:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 01:41:04 --> CSRF token verified.
+DEBUG - 2025-09-01 01:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 01:41:14 --> CSRF token verified.
+DEBUG - 2025-09-01 01:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 01:41:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "hapus_keca$kecamatan"
+[Method: GET, Route: admin/berita/hapus_keca$kecamatan/6]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/berita/hapus_keca$kecamatan/6')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/berita/hapus_keca$kecamatan/6')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+CRITICAL - 2025-09-01 01:42:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "hapus_keca$kecamatan"
+[Method: GET, Route: admin/berita/hapus_keca$kecamatan/6]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/berita/hapus_keca$kecamatan/6')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/berita/hapus_keca$kecamatan/6')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 01:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 01:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 02:25:23 --> ErrorException: Undefined variable $kecamatan
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 125.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kecamatan', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 125)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(27): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 02:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 02:30:04 --> CSRF token verified.
+DEBUG - 2025-09-01 02:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 02:34:02 --> CSRF token verified.
+CRITICAL - 2025-09-01 02:34:02 --> ErrorException: Undefined property: App\Controllers\Kelurahan::$kelurahanModel
+[Method: POST, Route: admin/pengaturan_kim/kelurahan/update/42]
+in APPPATH\Controllers\Kelurahan.php on line 54.
+ 1 APPPATH\Controllers\Kelurahan.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kelurahan::$kelurahanModel', 'D:\\laragon\\www\\kim-bimakota\\app\\Controllers\\Kelurahan.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->update('42')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+INFO - 2025-09-01 02:34:25 --> CSRF token verified.
+DEBUG - 2025-09-01 02:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 02:34:35 --> CSRF token verified.
+DEBUG - 2025-09-01 02:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 02:34:42 --> CSRF token verified.
+DEBUG - 2025-09-01 02:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 02:35:45 --> CSRF token verified.
+DEBUG - 2025-09-01 02:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 02:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 03:56:12 --> CSRF token verified.
+DEBUG - 2025-09-01 03:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 03:56:19 --> CSRF token verified.
+DEBUG - 2025-09-01 03:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 03:56:28 --> CSRF token verified.
+DEBUG - 2025-09-01 03:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 03:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 05:57:57 --> CSRF token verified.
+DEBUG - 2025-09-01 05:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 05:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:01:03 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 4 APPPATH\Controllers\Kelurahan.php(29): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:09:20 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:28 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:29 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:29 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:29 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:30 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:30 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:30 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:30 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:30 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:31 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:10:31 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 132.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 132)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:31:16 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 130.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 130)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:32:43 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:32:44 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:32:45 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:32:45 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:33:02 --> ErrorException: Attempt to read property "kecamatanid" on array
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kecamatanid" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:33:03 --> ErrorException: Attempt to read property "kecamatanid" on array
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kecamatanid" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:33:03 --> ErrorException: Attempt to read property "kecamatanid" on array
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kecamatanid" on array', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 06:33:16 --> ErrorException: Undefined array key "kecamatanid"
+[Method: GET, Route: admin/pengaturan_kim/kelurahan]
+in APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php on line 51.
+ 1 APPPATH\Views\admin\pengaturan_kim\kelurahan\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kecamatanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kelurahan\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kelurahan/index', [], true)
+ 5 APPPATH\Controllers\Kelurahan.php(31): view('admin/pengaturan_kim/kelurahan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kelurahan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelurahan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 06:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 06:46:08 --> CSRF token verified.
+DEBUG - 2025-09-01 06:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 06:46:14 --> CSRF token verified.
+DEBUG - 2025-09-01 06:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 06:46:49 --> CSRF token verified.
+DEBUG - 2025-09-01 06:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 06:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 07:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 07:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 07:03:54 --> ErrorException: Undefined array key "kelurahanid"
+[Method: GET, Route: admin/pengaturan_kim/kim]
+in APPPATH\Views\admin\pengaturan_kim\kim\index.php on line 144.
+ 1 APPPATH\Views\admin\pengaturan_kim\kim\index.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelurahanid"', 'D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kim\\index.php', 144)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\laragon\\www\\kim-bimakota\\app\\Views\\admin\\pengaturan_kim\\kim\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/pengaturan_kim/kim/index', [], true)
+ 5 APPPATH\Controllers\Kim.php(35): view('admin/pengaturan_kim/kim/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kim->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kim))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\laragon\\www\\kim-bimakota\\public\\index.php')
+DEBUG - 2025-09-01 07:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 07:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 07:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

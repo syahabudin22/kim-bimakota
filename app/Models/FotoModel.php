@@ -26,6 +26,8 @@ class FotoModel extends Model
     function getWhere($folder_photoid)
     {
         $builder = $this->db->table('tbl_folder_photo');
+        $builder->select('*');
+        $builder->join('tbl_photo', 'tbl_photo.folder_photoid = tbl_folder_photo.folder_photoid');
         $builder->where('tbl_folder_photo.folder_photoid', $folder_photoid);
         $builder->orderBy('tbl_folder_photo.folder_photoid', 'DESC');
         $query = $builder->get();

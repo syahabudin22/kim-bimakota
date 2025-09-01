@@ -68,3 +68,18 @@ $routes->post('/admin/galeri/video/create', 'Video::create');
 $routes->get('/admin/galeri/video/edit/(:num)', 'Video::edit/$1');
 $routes->post('/admin/galeri/video/update/(:num)', 'Video::update/$1');
 $routes->get('/admin/galeri/video/hapus/(:any)', 'Video::delete/$1');
+//kecamatan
+$routes->get('/admin/pengaturan_kim/kecamatan', 'Kecamatan::index');
+$routes->post('/admin/pengaturan_kim/kecamatan/create', 'Kecamatan::create');
+$routes->post('/admin/pengaturan_kim/kecamatan/update/(:num)', 'Kecamatan::update/$1');
+$routes->get('/admin/pengaturan_kim/kecamatan/hapus/(:any)', 'Kecamatan::delete/$1');
+//kelurahan
+$routes->get('/admin/pengaturan_kim/kelurahan', 'Kelurahan::index');
+$routes->post('/admin/pengaturan_kim/kelurahan/create', 'Kelurahan::create');
+$routes->post('/admin/pengaturan_kim/kelurahan/update/(:num)', 'Kelurahan::update/$1');
+$routes->get('/admin/pengaturan_kim/kelurahan/hapus/(:any)', 'Kelurahan::delete/$1');
+//KIM
+$routes->get('/admin/pengaturan_kim/kim', 'Kim::index');
+$routes->post('/admin/pengaturan_kim/kim/create', 'Kim::create');
+$routes->post('/admin/pengaturan_kim/kim/update/(:num)', 'Kim::update/$1');
+$routes->get('/admin/pengaturan_kim/kim/hapus/(:any)', 'Kim::delete/$1');

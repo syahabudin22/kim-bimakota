@@ -14,9 +14,9 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Pengaturan KIM</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="">Kecamatan</a></li>
-                                <li><a class="nav-link" href="">Kelurahan</a></li>
-                                <li><a class="nav-link" href="">KIM</a></li>
+                                <li><a class="nav-link" href="<?= base_url() ?>admin/pengaturan_kim/kecamatan">Kecamatan</a></li>
+                                <li><a class="nav-link" href="<?= base_url() ?>admin/pengaturan_kim/kelurahan">Kelurahan</a></li>
+                                <li><a class="nav-link" href="<?= base_url() ?>admin/pengaturan_kim/kim">KIM</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
