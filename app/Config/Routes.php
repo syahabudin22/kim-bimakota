@@ -83,3 +83,4 @@ $routes->get('/admin/pengaturan_kim/kim', 'Kim::index');
 $routes->post('/admin/pengaturan_kim/kim/create', 'Kim::create');
 $routes->post('/admin/pengaturan_kim/kim/update/(:num)', 'Kim::update/$1');
 $routes->get('/admin/pengaturan_kim/kim/hapus/(:any)', 'Kim::delete/$1');
+$routes->post('/admin/pengaturan_kim/kim/kecamatan_where', 'Kim::kecamatan_where');

@@ -21,4 +21,15 @@ class KimModel extends Model
         $query = $builder->get();
         return $query->getResult();
     }
+
+    function kecamatan_where($kecamatanid)
+    {
+        $builder = $this->db->table('tbl_kelurahan');
+        $builder->select('*');
+        $builder->where('tbl_kelurahan.kecamatanid', $kecamatanid);
+        $builder->orderBy('tbl_kelurahan.kecamatanid', 'DESC');
+        $query = $builder->get();
+
+        return $query->getResult();
+    }
 }

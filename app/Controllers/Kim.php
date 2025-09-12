@@ -38,10 +38,11 @@ class Kim extends BaseController
     public function create()
     {
         $data = [
-            'kelurahan' => $this->request->getVar('kelurahan'),
+            'kim' => $this->request->getVar('kim'),
+            'kelurahanid' => $this->request->getVar('kelurahanid'),
             'kecamatanid' => $this->request->getVar('kecamatanid'),
         ];
-        $save = $this->KelurahanModel->insert($data);
+        $save = $this->KimModel->insert($data);
         if (!$save) {
             return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
         } else {
@@ -49,15 +50,15 @@ class Kim extends BaseController
         }
     }
 
-    public function update($kelurahanid = null)
+    public function update($kimid = null)
     {
-        $kelurahan = $this->KelurahanModel->find($kelurahanid);
+        $kim = $this->KimModel->find($kimid);
         $data = [
-            'kelurahan' => $kelurahan,
-            'kelurahan' => $this->request->getVar('kelurahan'),
+            'kim' => $kim,
+            'kelurahanid' => $this->request->getVar('kelurahanid'),
             'kecamatanid' => $this->request->getVar('kecamatanid')
         ];
-        $save = $this->KelurahanModel->update($kelurahanid, $data);
+        $save = $this->KimModel->update($kimid, $data);
         if (!$save) {
             return redirect()->back()->withInput()->with('errors', 'Data Gagal Disimpan');
         } else {
@@ -65,9 +66,20 @@ class Kim extends BaseController
         }
     }
 
-    public function delete($kelurahanid = null)
+    public function delete($kimid = null)
     {
-        $this->KelurahanModel->delete($kelurahanid);
+        $this->KimModel->delete($kimid);
         return redirect()->to(site_url('/admin/pengaturan_kim/kelurahan'))->with('success', 'Data Berhasil Dihapus');
+    }
+
+    public function kecamatan_where()
+    {
+        $kec = $this->request->getVar('kecamatanid');
+        $kec_where = $this->KimModel->kecamatan_where($kec);
+        $data = [
+            'data' => $kec_where,
+            'token' => csrf_hash()
+        ];
+        echo json_encode($data);
     }
 }

@@ -86,15 +86,15 @@
                  <h1 class="modal-title fs-5" id="myModalLabel">Tambah KIM</h1>
                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
              </div>
-             <form action="<?= site_url('admin/pengaturan_kim/kelurahan/create') ?>" method="post">
+             <form action="<?= site_url('admin/pengaturan_kim/kim/create') ?>" method="post">
                  <?= csrf_field() ?>
                  <div class="modal-body">
                      <div class="mb-3">
-                         <label for="kelurahan" class="col-form-label">Nama KIM :</label>
-                         <input type="text" name="kelurahan" class="form-control" id="kelurahan" required>
+                         <label for="kim" class="col-form-label">Nama KIM :</label>
+                         <input type="text" name="kim" class="form-control" id="kim" required>
                      </div>
                      <div class="mb-3">
-                         <select name="kecamatanid" class="form-control selectric" required>
+                         <select name="kecamatanid" id="kecamatanid" class="form-control selectric" required>
                              <option value="<?= old('kecamatanid'); ?>" hidden>Pilih Kecamatan</option>
                              <?php foreach ($kecamatan as $key) : ?>
                                  <option value="<?= $key['kecamatanid'] ?>" <?= old('kecamatanid') == $key['kecamatanid'] ? 'selected' : null ?>>
@@ -104,13 +104,8 @@
                          </select>
                      </div>
                      <div class="mb-3">
-                         <select name="kecamatanid" class="form-control selectric" required>
-                             <option value="<?= old('kelurahanid'); ?>" hidden>Pilih Kelurahan</option>
-                             <?php foreach ($kelurahan as $key) : ?>
-                                 <option value="<?= $key['kelurahanid'] ?>" <?= old('kelurahanid') == $key['kelurahanid'] ? 'selected' : null ?>>
-                                     <?= $key['kelurahan'] ?>
-                                 </option>
-                             <?php endforeach; ?>
+                         <select name="kelurahanid" id="kelurahanid" class="form-control selectric" required>
+                             <option value="" hidden>Pilih Kecamatan terlebih dahulu</option>
                          </select>
                      </div>
                  </div>
@@ -134,11 +129,11 @@
                  <?= csrf_field() ?>
                  <div class="modal-body">
                      <div class="mb-3">
-                         <label for="kelurahan" class="col-form-label">Nama KIM :</label>
-                         <input type="text" name="kelurahan" class="form-control" id="kelurahan" value="<?= old('kelurahan'); ?>" required>
+                         <label for="kim" class="col-form-label">Nama KIM :</label>
+                         <input type="text" name="kim" class="form-control" id="kim" value="<?= old('kim'); ?>" required>
                      </div>
                      <div class="mb-3">
-                         <select name="kecamatanid" class="form-control selectric" required>
+                         <select name="kecamatanid" id="kecamatanid" class="form-control selectric" required>
                              <option value="<?= old('kecamatanid'); ?>" hidden>Pilih Kecamatan</option>
                              <?php foreach ($kecamatan as $key) : ?>
                                  <option value="<?= $key['kecamatanid'] ?>" <?= old('kecamatanid') == $key['kecamatanid'] ? 'selected' : null ?>>
@@ -148,7 +143,7 @@
                          </select>
                      </div>
                      <div class="mb-3">
-                         <select name="kelurahanid" class="form-control selectric" required>
+                         <select name="kelurahanid" id="kelurahanid" class="form-control selectric" required>
                              <option value="<?= old('kelurahanid'); ?>" hidden>Pilih Kelurahan</option>
                              <?php foreach ($kelurahan as $key) : ?>
                                  <option value="<?= $key['kelurahanid'] ?>" <?= old('kelurahanid') == $key['kelurahanid'] ? 'selected' : null ?>>
@@ -166,7 +161,44 @@
          </div>
      </div>
  </div>
- <script>
+ <script type="text/javascript">
+     $(document).ready(function() {
+         $('.selectric').selectric();
+
+         $('#kecamatanid').change(function() {
+             let kecamatanid = $(this).val();
+             let token_csrf = $('input[name="csrf_test_name"').attr('value');
+             console.log(kecamatanid);
+             console.log(token_csrf);
+             $.ajax({
+                 url: "<?= site_url('admin/pengaturan_kim/kim/kecamatan_where'); ?>",
+                 method: "POST",
+                 data: {
+                     kecamatanid: kecamatanid,
+                     csrf_test_name: token_csrf
+                 },
+                 async: false,
+                 dataType: 'json',
+                 success: function(data) {
+                     var html = '';
+                     var i;
+                     console.log(data)
+                     console.log(data['data'])
+                     $('input[name="csrf_test_name"').val(data['token'])
+                     html += '<option value="">Pilih</option>';
+                     data = data['data']
+                     for (i = 0; i < data.length; i++) {
+                         html += '<option value=' + data[i].kelurahanid + '>' + data[i].kelurahan + '</option>';
+                     }
+                     $('#kelurahanid').html('');
+                     $('#kelurahanid').html(html);
+                     $('#kelurahanid').selectric('refresh');
+                 }
+             });
+             return false;
+         });
+     });
+
      $(document).ready(function() {
          $('body').on('click', '#btn-edit', function() {
              let id = $(this).data('id');
